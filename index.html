@@ -3,1498 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BS. Nguyễn Thị Hoa | Từ Hạt Ngô Nghèo Sơn Trung Đến Bác Sĩ Làm Chủ Kỷ Nguyên XAI</title>
+    <title>Hành Trình Cuộc Đời & Khát Vọng Sống Khỏe - BS Nguyễn Thị Hoa</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: {
-                            950: '#050914',
-                            900: '#0A1128',
-                            800: '#111D40',
-                            700: '#1A2B5C'
-                        },
-                        gold: {
-                            300: '#F3E5AB',
-                            400: '#E5C158',
-                            500: '#D4AF37',
-                            600: '#B59024'
-                        },
-                        emerald: {
-                            400: '#34D399',
-                            500: '#10B981',
-                            600: '#059669'
-                        },
-                        crimson: {
-                            500: '#E11D48',
-                            600: '#BE123C'
-                        }
+                        navy: { 900: '#0A1128', 800: '#101D42' },
+                        gold: { 500: '#D4AF37', 600: '#AA8C2C' },
+                        emerald: { 600: '#10B981' }
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif']
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-
-    <style>
-        body {
-            background-color: #0A1128;
-            color: #F8FAFC;
-            overflow-x: hidden;
-        }
-        /* Hiệu ứng chữ Vàng Kim sang trọng */
-        .text-gold-gradient {
-            background: linear-gradient(135deg, #FFF3B0 0%, #D4AF37 50%, #AA7C11 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-gold-gradient {
-            background: linear-gradient(135deg, #E5C158 0%, #D4AF37 50%, #B59024 100%);
-        }
-        /* Hiệu ứng kính mờ Glassmorphism */
-        .glass-card {
-            background: rgba(17, 29, 64, 0.78);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(212, 175, 55, 0.28);
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            border-color: rgba(212, 175, 55, 0.65);
-            box-shadow: 0 12px 32px -10px rgba(212, 175, 55, 0.28);
-        }
-        /* 3D Flip Card CSS */
-        .perspective-1000 {
-            perspective: 1000px;
-        }
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-            transform-style: preserve-3d;
-        }
-        .flip-card.flipped .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            border-radius: 1rem;
-        }
-        .flip-card-back {
-            transform: rotateY(180deg);
-        }
-        /* Vòng sáng quanh ảnh chân dung */
-        .gold-glow {
-            box-shadow: 0 0 40px rgba(212, 175, 55, 0.45), inset 0 0 15px rgba(212, 175, 55, 0.3);
-        }
-        /* Đường kẻ Timeline dọc */
-        .timeline-line::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 1.25rem;
-            width: 3px;
-            background: linear-gradient(to bottom, #D4AF37, #10B981, #E11D48, #D4AF37);
-        }
-        @media (min-width: 1024px) {
-            .timeline-line::before {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #050914;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #D4AF37;
-            border-radius: 4px;
-        }
-    </style>
 </head>
-<body class="antialiased selection:bg-gold-500 selection:text-navy-950">
+<body class="bg-navy-900 text-gray-100 font-sans selection:bg-gold-500 selection:text-navy-900">
 
-    <!-- Thanh đo tiến độ đọc bài giảng (Scroll Progress Bar) -->
-    <div class="fixed top-0 left-0 w-full h-1.5 bg-navy-950 z-50">
-        <div id="scrollProgress" class="h-full bg-gradient-to-r from-gold-500 via-emerald-400 to-crimson-500 w-0 transition-all duration-150"></div>
-    </div>
+    <!-- Scroll Progress Bar -->
+    <div class="fixed top-0 left-0 h-1.5 bg-gradient-to-r from-gold-500 via-emerald-600 to-red-500 z-50 transition-all duration-300" id="progressBar" style="width: 0%"></div>
 
-    <!-- Thanh Công Cụ Hỗ Trợ Hiển Thị Ảnh Trực Tiếp & Lấy Mã Nguồn HTML -->
-    <div class="bg-navy-950/95 border-b border-gold-500/30 py-2.5 px-4 text-xs">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-            <div class="flex items-center gap-2 text-gold-300">
-                <i class="fa-solid fa-images text-emerald-400"></i>
-                <span><strong>Đã gắn 10/10 bức ảnh thực tế của BS. Hoa</strong> vào hành trình. Nếu đang xem bản nháp trước khi đẩy lên GitHub, chị có thể bấm nạp ảnh từ máy:</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-2">
-                <label for="localImageLoader" class="cursor-pointer px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-bold transition flex items-center gap-1.5 shadow">
-                    <i class="fa-solid fa-folder-open"></i> Nạp 10 Ảnh Từ Máy Tính (Xem Tức Thì)
-                </label>
-                <input type="file" id="localImageLoader" multiple accept="image/*" class="hidden" onchange="handleLocalImages(this.files)">
-                
-                <button onclick="openSourceCodeModal()" class="px-3.5 py-1.5 rounded-lg bg-gold-500/20 hover:bg-gold-500 hover:text-navy-950 text-gold-300 border border-gold-400/50 font-bold transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-code"></i> Xem & Copy Mã Nguồn HTML
-                </button>
-            </div>
-        </div>
-        <div id="imageLoadStatus" class="hidden max-w-7xl mx-auto mt-1.5 text-emerald-400 font-semibold text-center"></div>
-    </div>
-
-    <!-- Header & Navigation Bar -->
-    <header class="sticky top-1.5 z-40 bg-navy-950/90 backdrop-blur-md border-b border-gold-500/20">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-gold-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Thương hiệu -->
-            <a href="#hero" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-full bg-gold-gradient p-0.5 flex items-center justify-center shadow-lg">
-                    <div class="w-full h-full bg-navy-900 rounded-full flex items-center justify-center text-gold-400 font-serif font-bold text-lg">
-                        H
-                    </div>
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full border-2 border-gold-500 overflow-hidden shadow-lg shadow-gold-500/20">
+                    <img src="bs-hoa.jpg" alt="BS Nguyễn Thị Hoa" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <span class="block font-serif font-bold text-base sm:text-lg tracking-wide text-white group-hover:text-gold-400 transition">BS. NGUYỄN THỊ HOA</span>
-                    <span class="block text-[11px] uppercase tracking-widest text-gold-400 font-semibold">Hành Trình Y Đức & Kỷ Nguyên XAI</span>
+                    <h1 class="font-serif text-lg font-bold text-gold-500 tracking-wide">BS NGUYỄN THỊ HOA</h1>
+                    <p class="text-xs text-gray-400">Năng Lượng Sống Khỏe & Tri Thức Số</p>
                 </div>
-            </a>
-
-            <!-- Desktop Menu -->
-            <nav class="hidden xl:flex items-center gap-5 text-xs sm:text-sm font-medium text-slate-300">
-                <a href="#chuong-1" class="hover:text-gold-400 transition py-2">1. Cội Nguồn</a>
-                <a href="#chuong-2" class="hover:text-gold-400 transition py-2">2. 30 Năm Áo Trắng</a>
-                <a href="#chuong-3" class="hover:text-gold-400 transition py-2">3. Bước Ngoặt XAI</a>
-                <a href="#chuong-4" class="hover:text-gold-400 transition py-2">4. Thân - Tâm - Trí</a>
-                <a href="#chuong-5" class="hover:text-gold-400 transition py-2">5. Hành Trình Di Sản</a>
-                <a href="#album-10-anh" class="hover:text-gold-400 transition py-2 text-gold-300 font-semibold"><i class="fa-solid fa-camera-retro mr-1"></i>Trọn Bộ 10 Ảnh</a>
-                <a href="#tuong-tac" class="px-3.5 py-2 rounded-full bg-emerald-500/20 border border-emerald-400/50 text-emerald-300 hover:bg-emerald-500 hover:text-navy-950 font-semibold transition">
-                    Tương Tác & Ôn Tập
-                </a>
-                <a href="#ket-noi" class="px-4 py-2 rounded-full bg-gold-gradient text-navy-950 font-bold shadow-md hover:opacity-90 transition">
-                    Kết Nối
-                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#khoi-dau" class="hover:text-gold-500 transition">Khởi Đầu</a>
+                <a href="#su-menh" class="hover:text-gold-500 transition">Sứ Mệnh Y Khóa</a>
+                <a href="#ky-nguyen-xai" class="hover:text-gold-500 transition">Kỷ Nguyên XAI</a>
+                <a href="#than-tam-tri" class="hover:text-gold-500 transition">Thân - Tâm - Trí</a>
+                <a href="#tuong-tac" class="hover:text-gold-500 transition text-gold-500 font-bold"><i class="fa-solid fa-gamepad mr-1"></i> Góc Ôn Tập</a>
             </nav>
-
-            <!-- Nút Menu Mobile -->
-            <button id="mobileMenuBtn" class="xl:hidden text-gold-400 hover:text-white p-2 rounded-lg border border-gold-500/30">
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden xl:hidden bg-navy-900 border-b border-gold-500/30 px-4 pt-3 pb-6 space-y-2 text-sm">
-            <a href="#chuong-1" class="mobile-link block px-3 py-2 rounded-lg text-slate-200 hover:bg-navy-800 hover:text-gold-400">Chương 1: Cội Nguồn Sơn Trung & Khát Vọng Y Khoa</a>
-            <a href="#chuong-2" class="mobile-link block px-3 py-2 rounded-lg text-slate-200 hover:bg-navy-800 hover:text-gold-400">Chương 2: Hơn 30 Năm Tận Hiến Áo Blouse Trắng</a>
-            <a href="#chuong-3" class="mobile-link block px-3 py-2 rounded-lg text-slate-200 hover:bg-navy-800 hover:text-gold-400">Chương 3: Bước Ngoặt Dinh Dưỡng & Kỷ Nguyên XAI</a>
-            <a href="#chuong-4" class="mobile-link block px-3 py-2 rounded-lg text-slate-200 hover:bg-navy-800 hover:text-gold-400">Chương 4: Rèn Luyện Thân - Tâm - Trí & Vẻ Đẹp Tỏa Sáng</a>
-            <a href="#chuong-5" class="mobile-link block px-3 py-2 rounded-lg text-slate-200 hover:bg-navy-800 hover:text-gold-400">Chương 5: Hành Trình Xuyên Việt – Đi Để Biết Ơn</a>
-            <a href="#album-10-anh" class="mobile-link block px-3 py-2 rounded-lg text-gold-300 font-semibold hover:bg-navy-800">📸 Đại Sảnh Trọn Bộ 10 Bức Ảnh Cuộc Đời</a>
-            <a href="#tuong-tac" class="mobile-link block px-3 py-2.5 rounded-lg bg-emerald-500/20 text-emerald-300 font-semibold">⚡ Khu Vực Tương Tác & Ôn Tập</a>
-            <a href="#ket-noi" class="mobile-link block px-3 py-2.5 rounded-lg bg-gold-gradient text-navy-950 font-bold text-center">🌟 Kết Nối & Đưa Lên GitHub</a>
+            <a href="https://github.com/nguenhoa137-droid/blogcanhan.github.io" target="_blank" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-900 font-bold px-4 py-2 rounded-full shadow-lg hover:opacity-90 transition text-sm">
+                <i class="fa-brands fa-github mr-1"></i> GitHub Pages
+            </a>
         </div>
     </header>
 
-    <!-- ================= HERO SECTION (GẮN ẢNH 1: bs Hoa.jpg) ================= -->
-    <section id="hero" class="relative pt-10 pb-20 lg:py-20 overflow-hidden">
-        <div class="absolute top-10 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-navy-900 via-navy-800 to-navy-900">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Cột Nội dung Hero (7 cột) -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/15 border border-gold-400/40 text-gold-300 text-xs sm:text-sm font-semibold tracking-wide">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                        BÀI GIẢNG TƯƠNG TÁC TRUYỀN CẢM HỨNG • CÂU CHUYỆN THẬT 100%
-                    </div>
-
-                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                        TỪ HẠT NGÔ NGHÈO SƠN TRUNG ĐẾN <span class="text-gold-gradient">BÁC SĨ LÀM CHỦ KỶ NGUYÊN XAI</span>
-                    </h1>
-
-                    <blockquote class="p-5 rounded-2xl glass-card border-l-4 border-l-gold-500 text-slate-200 italic text-base sm:text-lg leading-relaxed">
-                        "Sinh ra từ vùng quê nghèo Sơn Trung – Quốc Oai, bố mẹ chắt chiu từng hạt cơm hạt ngô nuôi 6 anh chị em ăn học. Chính biến cố mất cha vì bệnh ung thư năm thứ 5 Đại học Y và tinh thần học tập suốt đời đã giúp tôi đi trọn hơn 30 năm Y đức và bứt phá làm chủ công nghệ AI ở tuổi nghỉ hưu!"
-                        <footer class="mt-2 font-sans not-italic font-bold text-gold-400 text-sm">— Bác sĩ CKI. Nguyễn Thị Hoa</footer>
-                    </blockquote>
-
-                    <!-- Các chỉ số nổi bật -->
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-                        <div class="glass-card p-3.5 rounded-xl text-center">
-                            <span class="block font-serif text-2xl font-bold text-gold-400">6 Anh Chị Em</span>
-                            <span class="text-xs text-slate-300">Học giỏi Top đầu trường</span>
-                        </div>
-                        <div class="glass-card p-3.5 rounded-xl text-center">
-                            <span class="block font-serif text-2xl font-bold text-emerald-400">30+ Năm</span>
-                            <span class="text-xs text-slate-300">Khoa Nhi • HSCC • Tim Mạch</span>
-                        </div>
-                        <div class="glass-card p-3.5 rounded-xl text-center">
-                            <span class="block font-serif text-2xl font-bold text-crimson-500">Làm Chủ AI</span>
-                            <span class="text-xs text-slate-300">Web, Video, Nhạc, Livestream</span>
-                        </div>
-                        <div class="glass-card p-3.5 rounded-xl text-center">
-                            <span class="block font-serif text-2xl font-bold text-sky-400">10 Dấu Ấn</span>
-                            <span class="text-xs text-slate-300">Hình ảnh thực tế xuyên suốt</span>
-                        </div>
-                    </div>
-
-                    <!-- Nút CTA -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#chuong-1" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gold-gradient text-navy-950 font-bold text-base shadow-xl hover:scale-105 transition transform flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-book-open"></i> Khám phá 5 Chương Cuộc Đời (Kèm Ảnh)
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-500 text-xs font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-heart-pulse"></i> <span>Câu Chuyện Truyền Cảm Hứng • 58 Tuổi Vươn Tầm Kỷ Nguyên Số</span>
+                    </span>
+                    <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Từ Nông Thôn Sơn Trung <br>Đến Trái Tim <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-500 via-emerald-400 to-amber-300">Kỷ Nguyên XAI</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Hành trình hơn 30 năm tận tụy khoác áo blouse trắng cứu chữa người bệnh, vượt qua nghịch cảnh nghèo khó, để rồi ở tuổi 58 tiếp tục thăng hoa cùng trí tuệ nhân tạo, dinh dưỡng học và lan tỏa năng lượng sống khỏe đến cộng đồng.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#su-menh" class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-8 py-3.5 rounded-xl shadow-xl transition transform hover:-translate-y-0.5">
+                            Khám Phá Hành Trình <i class="fa-solid fa-arrow-down ml-2"></i>
                         </a>
-                        <a href="#album-10-anh" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-navy-800 hover:bg-navy-700 text-gold-300 border border-gold-500/40 font-semibold text-base transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-images"></i> Xem Trọn Bộ 10 Bức Ảnh
+                        <a href="#tuong-tac" class="border border-gold-500/50 hover:bg-gold-500/10 text-gold-500 font-bold px-8 py-3.5 rounded-xl transition">
+                            Thử Thách Trắc Nghiệm <i class="fa-solid fa-brain ml-2"></i>
                         </a>
                     </div>
                 </div>
-
-                <!-- Cột Chân dung Bác sĩ Hoa - ẢNH SỐ 1: bs Hoa.jpg -->
-                <div class="lg:col-span-5 flex flex-col items-center">
-                    <div class="relative w-72 sm:w-80 lg:w-96 rounded-3xl p-2 bg-gold-gradient gold-glow">
-                        <div class="rounded-2xl overflow-hidden bg-navy-900 relative aspect-[4/4.3]">
-                            <img data-filename="bs Hoa.jpg"
-                                 src="bs Hoa.jpg" 
-                                 alt="Ảnh 1: Chân dung Bác sĩ Nguyễn Thị Hoa (bs Hoa.jpg)" 
-                                 class="story-img w-full h-full object-cover object-top hover:scale-105 transition duration-500 cursor-pointer"
-                                 onclick="openLightbox(this.src, 'Ảnh 1 (bs Hoa.jpg): Chân dung Bác sĩ CKI. Nguyễn Thị Hoa – Hơn 30 năm tận hiến trong màu áo Blouse trắng và tiên phong làm chủ công nghệ AI.')"
-                                 onerror="handleImgError(this, 'bs Hoa.jpg', 'Chân Dung Bác Sĩ Nguyễn Thị Hoa')">
-                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-950/85 border border-gold-400/50 text-gold-300 text-[11px] font-bold">
-                                <i class="fa-solid fa-camera mr-1"></i> Ảnh #01: bs Hoa.jpg
-                            </div>
-                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-transparent p-4 text-center">
-                                <span class="inline-block px-3 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-semibold mb-1">
-                                    Đại học Y Hà Nội • Hơn 30 năm Y đức
-                                </span>
-                                <h2 class="font-serif text-xl font-bold text-white">Bác Sĩ CKI. Nguyễn Thị Hoa</h2>
-                                <p class="text-xs text-gold-300">Chuyên khoa Nhi • Hồi sức cấp cứu • Tim mạch Lão học</p>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-gold-500 to-emerald-500 rounded-2xl blur-xl opacity-30 animate-pulse"></div>
+                        <div class="relative bg-navy-800 p-3 rounded-2xl border border-gold-500/30 shadow-2xl">
+                            <img src="bs-hoa.jpg" alt="BS Nguyễn Thị Hoa" class="rounded-xl w-72 h-96 object-cover shadow-inner">
+                            <div class="absolute -bottom-6 -right-6 bg-navy-900 border border-gold-500/40 p-4 rounded-xl shadow-xl flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center text-gold-500">
+                                    <i class="fa-solid fa-stethoscope text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-400">Chuyên gia Y khoa</p>
+                                    <p class="text-sm font-bold text-gold-500">Phòng Khám BS Hoa</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p class="mt-3 text-xs text-slate-400 flex items-center gap-1.5">
-                        <i class="fa-solid fa-magnifying-glass-plus text-gold-400"></i> Chạm vào bất kỳ bức ảnh nào trong bài để phóng to
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 1: Khởi Đầu & Nghị Lực Sống -->
+    <section id="khoi-dau" class="py-20 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 font-semibold tracking-widest uppercase text-sm">Chương 1</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Gốc Rễ Nông Dân & Khát Vọng Y Đức</h3>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-gray-300 leading-relaxed">
+                    <p>
+                        Sinh ra trong một gia đình nông nghiệp nghèo khó với 6 anh chị em tại vùng Sơn Trung – Quốc Oai, Hà Nội. Bố mẹ tuy rất nghèo nhưng vẫn chắt chiu từng hạt cơm, hạt ngô nuôi các con ăn học nên người. Không phụ công ơn đó, 6 anh chị em đều nỗ lực học tập xuất sắc: anh cả đi bộ đội lập nghiệp Bình Phước, anh hai kỹ sư Tổng công ty Hàng không Việt Nam, còn chị vươn lên đỗ Trường Đại học Y Hà Nội (Lớp A, Khóa 86-92).
+                    </p>
+                    <div class="bg-navy-800/80 p-6 rounded-2xl border-l-4 border-gold-500">
+                        <p class="italic text-gray-200">
+                            "Năm thứ 5 đại học, bố mất vì căn bệnh ung thư hiểm nghèo trong lúc gia đình khánh kiệt. Nỗi đau ấy trở thành ngọn lửa thiêng liêng thôi thúc khát vọng cứu chữa người bệnh cháy bỏng trong suốt cuộc đời y nghiệp của chị."
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="hien-mau.jpg" alt="Hiến máu cứu người" class="rounded-xl shadow-lg border border-gold-500/20 object-cover h-64 w-full transform hover:scale-105 transition">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="bg-gradient-to-br from-gold-500 to-gold-600 p-6 rounded-xl text-navy-900 shadow-xl">
+                            <h4 class="font-serif font-bold text-xl mb-2">Hơn 30 Năm Y Nghiệp</h4>
+                            <p class="text-sm font-medium">10 năm Khoa Nhi • 10 năm Trưởng khoa HSCC • >10 năm Trưởng khoa Nội - Tim mạch Lão học Bệnh viện Quốc Oai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter 2: Sự Nghiệp Y Khoa & Phòng Khám -->
+    <section id="su-menh" class="py-20 bg-navy-800/50 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 font-semibold tracking-widest uppercase text-sm">Chương 2</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Hơn 3 Mươi Năm Phụng Sự Sức Khỏe Cộng Đồng</h3>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-navy-900 p-8 rounded-2xl border border-gold-500/20 shadow-xl relative overflow-hidden group hover:border-gold-500 transition">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gold-500/5 rounded-bl-full transition group-hover:bg-gold-500/10"></div>
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h4 class="font-serif text-xl font-bold mb-3 text-gold-500">10 Năm Khoa Nhi</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Chăm sóc những mầm non tương lai với tất cả tình yêu thương của một người mẹ, sự tận tụy của người thầy thuốc áo blouse trắng.
+                    </p>
+                </div>
+                <div class="bg-navy-900 p-8 rounded-2xl border border-gold-500/20 shadow-xl relative overflow-hidden group hover:border-gold-500 transition">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gold-500/5 rounded-bl-full transition group-hover:bg-gold-500/10"></div>
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="font-serif text-xl font-bold mb-3 text-gold-500">10 Năm Hồi Sức Cấp Cứu</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Trực chiến tuyến đầu giành giật sự sống cho người bệnh trong những giây phút cam go nhất đòi hỏi bản lĩnh thép và chuyên môn sâu.
+                    </p>
+                </div>
+                <div class="bg-navy-900 p-8 rounded-2xl border border-gold-500/20 shadow-xl relative overflow-hidden group hover:border-gold-500 transition">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gold-500/5 rounded-bl-full transition group-hover:bg-gold-500/10"></div>
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h4 class="font-serif text-xl font-bold mb-3 text-gold-500">Trưởng Khoa Nội - Tim Mạch Lão Học</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Hơn 10 năm lãnh đạo khoa, đúc kết kinh nghiệm điều trị toàn diện cho bệnh nhân cao tuổi và các bệnh lý mạn tính trước khi nghỉ hưu.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================= HÀNH TRÌNH 5 CHƯƠNG GẮN LIỀN VỚI 10 BỨC ẢNH THỰC TẾ ================= -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pb-24">
-
-        <!-- ================= CHƯƠNG 1: CỘI NGUỒN SƠN TRUNG & BIẾN CỐ NĂM THỨ 5 ĐẠI HỌC Y ================= -->
-        <section id="chuong-1" class="scroll-mt-24">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 border-b border-gold-500/20 pb-4">
-                <div>
-                    <span class="text-gold-400 font-bold tracking-widest uppercase text-xs">Chương 01 • Cội Nguồn Ý Chí & Lời Thề Cứu Người</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">Từ Hạt Cơm Hạt Ngô Sơn Trung Đến Giảng Đường Đại Học Y Hà Nội</h2>
-                </div>
-                <span class="mt-2 md:mt-0 text-xs px-3 py-1.5 rounded-lg bg-navy-800 text-gold-300 border border-gold-500/30">
-                    <i class="fa-solid fa-seedling mr-1"></i> Sơn Trung – Quốc Oai • Gia đình 6 anh chị em hiếu học
-                </span>
+    <!-- Chapter 3: Kỷ Nguyên XAI & Học Tập Suốt Đời -->
+    <section id="ky-nguyen-xai" class="py-20 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 font-semibold tracking-widest uppercase text-sm">Chương 3</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Bứt Phá Giới Hạn Cùng Trí Tuệ Nhân Tạo (XAI)</h3>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <!-- Nội dung Chương 1 -->
-                <div class="lg:col-span-7 space-y-5">
-                    <div class="glass-card p-6 sm:p-8 rounded-2xl space-y-4">
-                        <h3 class="text-xl font-bold text-gold-400 flex items-center gap-2">
-                            <i class="fa-solid fa-wheat-awn"></i> Gia đình nông nghiệp nghèo khó và 6 anh chị em đứng Top đầu trường
-                        </h3>
-                        <p class="text-slate-200 leading-relaxed text-sm sm:text-base">
-                            Chị Hoa sinh ra trong một gia đình thuần nông nghèo khó ở vùng nông thôn <strong>Sơn Trung – Quốc Oai</strong>. Gia đình có tới <strong>6 anh chị em</strong>, bố mẹ làm nông nghiệp vất vả quanh năm, tuy rất nghèo nhưng vẫn chắt chiu từng hạt cơm, hạt ngô để nuôi các con ăn học.
-                        </p>
-                        <p class="text-slate-200 leading-relaxed text-sm sm:text-base">
-                            Thương bố mẹ tần tảo, <strong>6 anh chị em trong nhà không ai bảo ai đều tự giác học thật giỏi, luôn đứng hạng Top có tiếng của trường</strong> và trưởng thành vững vàng:
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-                            <div class="p-3.5 rounded-xl bg-navy-950/90 border border-gold-500/30">
-                                <span class="text-gold-400 font-bold text-sm block"><i class="fa-solid fa-chalkboard-user mr-1"></i> Chị Gái</span>
-                                <span class="text-xs text-slate-300">Trở thành Cô giáo tận tụy trên bục giảng.</span>
-                            </div>
-                            <div class="p-3.5 rounded-xl bg-navy-950/90 border border-emerald-500/30">
-                                <span class="text-emerald-400 font-bold text-sm block"><i class="fa-solid fa-person-military-pointing mr-1"></i> Anh Cả</span>
-                                <span class="text-xs text-slate-300">Đi bộ đội rèn luyện rồi lập nghiệp vững vàng trong Bình Phước.</span>
-                            </div>
-                            <div class="p-3.5 rounded-xl bg-navy-950/90 border border-sky-500/30">
-                                <span class="text-sky-400 font-bold text-sm block"><i class="fa-solid fa-plane-up mr-1"></i> Anh Hai</span>
-                                <span class="text-xs text-slate-300">Học Đại học Bách Khoa, là Kỹ sư Tổng Công ty Hàng không Việt Nam.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="glass-card p-6 sm:p-8 rounded-2xl border-l-4 border-l-crimson-500 space-y-3">
-                        <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                            <i class="fa-solid fa-heart-pulse text-crimson-500"></i> Biến cố mất cha năm thứ 5 Đại học Y Hà Nội & Khát khao cứu người
-                        </h3>
-                        <p class="text-slate-200 leading-relaxed text-sm sm:text-base">
-                            Từ nhỏ chị Hoa rất thích học các môn Tự nhiên, không thích các môn Xã hội nhưng vẫn nỗ lực đạt <strong>học sinh xuất sắc toàn diện nhiều năm liền</strong>. Cấp 3, chị được định hướng thi đỗ vào <strong>Đại học Y Hà Nội</strong> với khát khao cháy bỏng là cứu chữa người bệnh.
-                        </p>
-                        <p class="text-slate-200 leading-relaxed text-sm sm:text-base">
-                            Biến cố lớn nhất ập đến khi chị đang học <strong>năm thứ 5 Đại học Y: Bố chị qua đời vì căn bệnh ung thư</strong> do bệnh quá nặng và gia đình lúc ấy quá nghèo. Nỗi đau mất cha trở thành lời thề khắc cốt ghi tâm: <em>"Cả cuộc đời này mình phải tận tâm cứu người và trao đi giọt máu, trao đi sự sống cho bệnh nhân!"</em>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Hình ảnh gắn kết Chương 1 & 2 - ẢNH SỐ 2: hiến máu.jpg -->
-                <div class="lg:col-span-5">
-                    <div class="glass-card p-4 rounded-3xl border-2 border-crimson-500/50 space-y-4">
-                        <div class="rounded-2xl overflow-hidden relative group aspect-[3/3.6] bg-navy-950">
-                            <img data-filename="hiến máu.jpg"
-                                 src="hiến máu.jpg" 
-                                 alt="Ảnh 2: Bác sĩ Hoa hiến máu cứu người (hiến máu.jpg)" 
-                                 class="story-img w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
-                                 onclick="openLightbox(this.src, 'Ảnh 2 (hiến máu.jpg): Ngày 07/02/2026 – Bác sĩ Nguyễn Thị Hoa nở nụ cười hiền hậu trực tiếp hiến máu cứu người. Khát vọng cứu người từ thời sinh viên Đại học Y Hà Nội vẫn cháy bỏng suốt cuộc đời chị.')"
-                                 onerror="handleImgError(this, 'hiến máu.jpg', 'Bác Sĩ Hoa Hiến Máu Nhân Đạo (07/02/2026)')">
-                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-crimson-600/90 text-white text-xs font-bold shadow">
-                                <i class="fa-solid fa-droplet mr-1"></i> Ảnh #02: hiến máu.jpg (07/02/2026)
-                            </div>
-                        </div>
-                        <div class="p-2 text-center space-y-1">
-                            <h4 class="font-serif text-lg font-bold text-white">Minh Chứng Sống Động Cho Khát Vọng Cứu Người</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Từ nỗi đau mất cha vì bệnh ung thư năm thứ 5 Đại học Y đến nụ cười rạng rỡ khi trao giọt máu hồng ngày <strong>07/02/2026</strong>: Trái tim người thầy thuốc chưa bao giờ ngừng đập vì cộng đồng.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CHƯƠNG 2: HƠN 30 NĂM KHOÁC ÁO BLOUSE TRẮNG ================= -->
-        <section id="chuong-2" class="scroll-mt-24">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 border-b border-gold-500/20 pb-4">
-                <div>
-                    <span class="text-emerald-400 font-bold tracking-widest uppercase text-xs">Chương 02 • Hơn 3 Thập Kỷ Cống Hiến Ngành Y</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">3 Chặng Đường Vàng Trong Màu Áo Blouse Trắng</h2>
-                </div>
-                <span class="mt-2 md:mt-0 text-xs px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-300 border border-emerald-400/30">
-                    <i class="fa-solid fa-user-doctor mr-1"></i> 10 Năm Khoa Nhi • 10 Năm Lãnh Đạo HSCC • Tim Mạch Lão Học
-                </span>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <!-- Cột Ảnh Chân Dung Blouse Trắng Gắn Với Sự Nghiệp -->
-                <div class="lg:col-span-4">
-                    <div class="glass-card p-4 rounded-3xl border border-gold-500/40 text-center space-y-3">
-                        <div class="rounded-2xl overflow-hidden h-80 bg-navy-950 relative group">
-                            <img data-filename="bs Hoa.jpg"
-                                 src="bs Hoa.jpg" 
-                                 alt="Bác sĩ CKI Nguyễn Thị Hoa trong màu áo Blouse trắng" 
-                                 class="story-img w-full h-full object-cover object-top group-hover:scale-105 transition duration-500 cursor-pointer"
-                                 onclick="openLightbox(this.src, 'Bác sĩ CKI. Nguyễn Thị Hoa: Hơn 30 năm tận tụy qua 3 chuyên khoa mũi nhọn: Khoa Nhi, Khoa Hồi sức cấp cứu (HSCC) và Khoa Tim mạch Lão học.')"
-                                 onerror="handleImgError(this, 'bs Hoa.jpg', 'Bác Sĩ CKI. Nguyễn Thị Hoa')">
-                            <span class="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-navy-950/90 text-gold-400 text-xs font-bold border border-gold-500/40">
-                                Hơn 30 Năm Y Đức
-                            </span>
-                        </div>
-                        <h4 class="font-serif text-lg font-bold text-gold-400">Thầy Thuốc Như Mẹ Hiền</h4>
-                        <p class="text-xs text-slate-300 px-2">
-                            Dù ở Khoa Nhi, nơi đầu sóng ngọn gió HSCC hay Khoa Tim mạch Lão học, nụ cười nhân hậu của BS. Hoa luôn là điểm tựa tinh thần cho người bệnh.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3 Cột mốc 30 năm -->
-                <div class="lg:col-span-8 space-y-4">
-                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-emerald-400 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400 font-serif font-bold text-xl shrink-0">
-                            10 Năm
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold uppercase text-emerald-400">Chặng 1 • 10 Năm Đầu Tiên</span>
-                            <h3 class="font-serif text-xl font-bold text-white">Công Tác Tại Khoa Nhi</h3>
-                            <p class="text-sm text-slate-300 mt-1">
-                                Ra trường khoác lên mình chiếc áo Blouse trắng, chị dành trọn 10 năm đầu tiên chăm sóc, điều trị cho các bệnh nhi nhỏ tuổi bằng tất cả tình yêu thương và sự tận tụy.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-crimson-500 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                        <div class="w-14 h-14 rounded-2xl bg-crimson-500/20 border border-crimson-500/40 flex items-center justify-center text-crimson-500 font-serif font-bold text-xl shrink-0">
-                            10 Năm
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold uppercase text-crimson-500">Chặng 2 • Bản Lĩnh Nơi Đầu Sóng Ngọn Gió</span>
-                            <h3 class="font-serif text-xl font-bold text-white">Học Chuyên Khoa I & Làm Lãnh Đạo Khoa Hồi Sức Cấp Cứu (HSCC)</h3>
-                            <p class="text-sm text-slate-300 mt-1">
-                                Không ngừng nâng cao trình độ, chị theo học <strong>Chuyên khoa I HSCC</strong> và đảm nhiệm cương vị <strong>Lãnh đạo khoa HSCC suốt 10 năm</strong> – trực tiếp chỉ huy và giành giật sự sống cho hàng ngàn ca bệnh nguy kịch.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="glass-card p-6 rounded-2xl border-l-4 border-l-gold-400 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                        <div class="w-14 h-14 rounded-2xl bg-gold-500/20 border border-gold-400/40 flex items-center justify-center text-gold-400 font-serif font-bold text-xl shrink-0">
-                            10+ Năm
-                        </div>
-                        <div>
-                            <span class="text-xs font-bold uppercase text-gold-400">Chặng 3 • Trọn Vẹn Nghĩa Tình</span>
-                            <h3 class="font-serif text-xl font-bold text-white">Công Tác Tại Khoa Tim Mạch Lão Học & Nghỉ Hưu Cách Đây 2 Năm</h3>
-                            <p class="text-sm text-slate-300 mt-1">
-                                Những năm tháng còn lại trước khi nghỉ hưu (cách đây 2 năm), chị tận tâm chăm sóc các bệnh nhân cao tuổi tại <strong>Khoa Tim mạch Lão học</strong>, đồng thời duy trì <a href="https://www.facebook.com/PK.BacSiHoa" target="_blank" class="text-gold-400 underline font-semibold">Phòng khám Bác sĩ Hoa</a> phục vụ nhân dân.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CHƯƠNG 3: BƯỚC NGOẶT DINH DƯỠNG & KỶ NGUYÊN XAI (GẮN ẢNH 3: thây tro.jpg) ================= -->
-        <section id="chuong-3" class="scroll-mt-24">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 border-b border-gold-500/20 pb-4">
-                <div>
-                    <span class="text-gold-400 font-bold tracking-widest uppercase text-xs">Chương 03 • Cuộc Cách Mạng Tư Duy & Công Nghệ (2024 - 2026)</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">Khi Bác Sĩ Nghỉ Hưu Làm Bạn Với AI & Khai Mở Cuộc Đời Mới</h2>
-                </div>
-                <span class="mt-2 md:mt-0 text-xs px-3 py-1.5 rounded-lg bg-gold-500/15 text-gold-300 border border-gold-500/30">
-                    <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Nutrime • Super AI • CMA • Đời Mới XAI
-                </span>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <!-- Cột hình ảnh Thầy Trò - ẢNH SỐ 3: thây tro.jpg -->
-                <div class="lg:col-span-5">
-                    <div class="glass-card p-4 rounded-3xl border-2 border-gold-500/50 space-y-4">
-                        <div class="rounded-2xl overflow-hidden relative group aspect-[3/3.8] bg-navy-950">
-                            <img data-filename="thây tro.jpg"
-                                 src="thây tro.jpg" 
-                                 alt="Ảnh 3: Bác sĩ Hoa cùng người Thầy truyền cảm hứng (thây tro.jpg)" 
-                                 class="story-img w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
-                                 onclick="openLightbox(this.src, 'Ảnh 3 (thây tro.jpg): Bác sĩ Nguyễn Thị Hoa rạng rỡ đồng hành cùng người Thầy truyền cảm hứng – Bước ngoặt khai mở tư duy, làm chủ công nghệ AI và kiến tạo cuộc sống mới.')"
-                                 onerror="handleImgError(this, 'thây tro.jpg', 'Tình Thầy Trò Truyền Cảm Hứng (thây tro.jpg)')">
-                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-950/90 text-gold-400 text-xs font-bold border border-gold-400/50">
-                                <i class="fa-solid fa-user-graduate mr-1"></i> Ảnh #03: thây tro.jpg
-                            </div>
-                        </div>
-                        <div class="p-2 text-center space-y-1">
-                            <h4 class="font-serif text-lg font-bold text-gold-400">Học Từ Những Người Thầy Xuất Sắc & Tử Tế</h4>
-                            <p class="text-xs text-slate-300 leading-relaxed">
-                                Khoảnh khắc đẹp của chị Hoa cùng người Thầy dẫn đường. Nhờ những người thầy có phương pháp giảng dạy cuốn hút như <strong>thầy Trần Khánh Tự</strong> và <strong>thầy Tuấn Tử Tế</strong>, chị đã mở ra một chương đời mới rực rỡ.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cột Nội dung Hành trình học Dinh dưỡng & AI -->
-                <div class="lg:col-span-7 space-y-6">
-                    <!-- Lộ trình 3 cột mốc học tập -->
-                    <div class="glass-card p-6 sm:p-7 rounded-2xl space-y-4">
-                        <h3 class="font-serif text-2xl font-bold text-white">Lộ Trình Học Tập Không Ngơi Nghỉ Từ 2024 Đến Nay</h3>
-                        
-                        <div class="space-y-4">
-                            <div class="p-4 rounded-xl bg-navy-950/90 border-l-4 border-l-emerald-400">
-                                <span class="text-xs font-bold text-emerald-400 uppercase">Năm 2024 • Chăm Sóc Sức Khỏe Chủ Động</span>
-                                <h4 class="font-bold text-white text-base mt-0.5">Học Viện Dinh Dưỡng Nutrime</h4>
-                                <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                                    Với mong muốn có kiến thức chuyên sâu về dinh dưỡng để giúp mọi người khỏe từ gốc, chị tham gia các khóa khoa học dinh dưỡng của <strong>Học viện Nutrime</strong>.
-                                </p>
-                            </div>
-
-                            <div class="p-4 rounded-xl bg-navy-950/90 border-l-4 border-l-gold-400">
-                                <span class="text-xs font-bold text-gold-400 uppercase">Tháng 5/2025 & Tháng 10/2025 • Bén Duyên Cùng AI</span>
-                                <h4 class="font-bold text-white text-base mt-0.5">Khóa Học Super AI & Lớp CMA Của Thầy Trần Khánh Tự</h4>
-                                <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                                    Tháng 5/2025 nhận thấy kiến thức AI vô cùng thú vị, đến tháng 10/2025 chị bắt gặp các trang chia sẻ AI đặc biệt của <strong>thầy Trần Khánh Tự</strong>. Chị lập tức đăng ký học <strong>Super AI</strong> và tiếp tục học lên lớp <strong>CMA</strong>.
-                                </p>
-                            </div>
-
-                            <div class="p-4 rounded-xl bg-navy-950/90 border-l-4 border-l-crimson-500">
-                                <span class="text-xs font-bold text-crimson-500 uppercase">Chuyển Hóa Toàn Diện Tư Duy & Đời Sống</span>
-                                <h4 class="font-bold text-white text-base mt-0.5">Học Cùng Thầy Tuấn Tử Tế: Kiến Xây Đời Mới, Đời Mới XAI & Kiến Tạo Cuộc Sống XAI</h4>
-                                <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                                    Không chỉ học công cụ AI, qua các lớp phát triển bản thân của <strong>thầy Tuấn Tử Tế</strong> và các thầy cô, chị được học tư duy về rất nhiều lĩnh vực khác nhau, nhận ra biết bao điều thú vị xung quanh giúp cuộc sống dễ dàng hơn, hạnh phúc hơn và vui vẻ hơn mỗi ngày!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 6 Thành tựu làm chủ công nghệ của chị Hoa -->
-                    <div class="glass-card p-6 rounded-2xl">
-                        <h4 class="font-bold text-gold-400 text-base mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-trophy"></i> 6 Đột Phá Kỳ Diệu Khi Giao Tiếp Với AI Thân Thiện Như Người Bạn:
-                        </h4>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-                            <div class="p-3 rounded-xl bg-navy-950 border border-gold-500/20 flex items-center gap-3">
-                                <i class="fa-solid fa-video text-crimson-500 text-lg"></i>
-                                <span><strong>Tự tin Livestream trên FB</strong> chia sẻ điều mình biết với mọi người.</span>
-                            </div>
-                            <div class="p-3 rounded-xl bg-navy-950 border border-gold-500/20 flex items-center gap-3">
-                                <i class="fa-solid fa-film text-gold-400 text-lg"></i>
-                                <span><strong>Tạo ảnh, tạo video & dựng phim tự động</strong> bằng AI chuyên nghiệp.</span>
-                            </div>
-                            <div class="p-3 rounded-xl bg-navy-950 border border-gold-500/20 flex items-center gap-3">
-                                <i class="fa-solid fa-music text-emerald-400 text-lg"></i>
-                                <span><strong>Tự sáng tác nhạc & bài hát AI</strong> (đăng tải trên kênh YouTube).</span>
-                            </div>
-                            <div class="p-3 rounded-xl bg-navy-950 border border-gold-500/20 flex items-center gap-3">
-                                <i class="fa-solid fa-globe text-sky-400 text-lg"></i>
-                                <span><strong>Tạo Website HTML & đưa lên GitHub</strong> để học viên vào ôn tập.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CHƯƠNG 4: RÈN LUYỆN THÂN - TÂM - TRÍ & VẺ ĐẸP TỎA SÁNG (GẮN ẢNH 4 & 5: yoga.jpg, kenh ga.jpg) ================= -->
-        <section id="chuong-4" class="scroll-mt-24">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 border-b border-gold-500/20 pb-4">
-                <div>
-                    <span class="text-emerald-400 font-bold tracking-widest uppercase text-xs">Chương 04 • Kỷ Luật Bản Thân & Cộng Đồng Tuyệt Vời</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">Rèn Luyện Thân – Tâm – Trí: Chạy Marathon, Tập Yoga & Tỏa Sáng</h2>
-                </div>
-                <span class="mt-2 md:mt-0 text-xs px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-300 border border-emerald-400/30">
-                    <i class="fa-solid fa-heart-circle-check mr-1"></i> Chạy Đường Dài Marathon • Yoga Đồng Đội • Áo Dài Kênh Gà
-                </span>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <!-- Thẻ Ảnh số 4: yoga.jpg (7 cột) -->
-                <div class="lg:col-span-7 glass-card rounded-3xl p-5 sm:p-6 flex flex-col justify-between space-y-4">
-                    <div class="rounded-2xl overflow-hidden relative group h-72 sm:h-96 bg-navy-950">
-                        <img data-filename="yoga.jpg"
-                             src="yoga.jpg" 
-                             alt="Ảnh 4: Bác sĩ Hoa tập Yoga cùng đồng đội trong màu áo đỏ sao vàng (yoga.jpg)" 
-                             class="story-img w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
-                             onclick="openLightbox(this.src, 'Ảnh 4 (yoga.jpg): Rèn luyện Thân - Tâm - Trí và kỷ luật bản thân: Bác sĩ Hoa cùng cộng đồng học tập đồng diễn Yoga trong sắc áo cờ đỏ sao vàng rực rỡ.')"
-                             onerror="handleImgError(this, 'yoga.jpg', 'Đồng Diễn Yoga Cờ Đỏ Sao Vàng (yoga.jpg)')">
-                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-crimson-600/90 text-white text-xs font-bold shadow">
-                            <i class="fa-solid fa-spa mr-1"></i> Ảnh #04: yoga.jpg
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <span class="text-xs font-bold uppercase text-emerald-400">Kỷ Luật Thép Tạo Nên Sự Tự Tin Mới</span>
-                        <h3 class="font-serif text-2xl font-bold text-white">Chinh Phục Đường Dài Marathon & Đồng Diễn Yoga</h3>
-                        <p class="text-sm text-slate-300 leading-relaxed">
-                            Nhờ môi trường học tập và rèn luyện kỷ luật Thân – Tâm – Trí, chị Hoa đã làm được những điều mà trước đây chưa từng nghĩ tới: <strong>biết chạy đường dài, chạy Marathon bền bỉ</strong>, mỗi sáng cùng đồng đội tập <strong>Yoga trong sắc áo đỏ sao vàng</strong>, tràn đầy sức sống và sự tự tin.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Thẻ Ảnh số 5: kenh ga.jpg (5 cột) -->
-                <div class="lg:col-span-5 glass-card rounded-3xl p-5 sm:p-6 flex flex-col justify-between space-y-4">
-                    <div class="rounded-2xl overflow-hidden relative group h-72 sm:h-96 bg-navy-950">
-                        <img data-filename="kenh ga.jpg"
-                             src="kenh ga.jpg" 
-                             alt="Ảnh 5: Bác sĩ Hoa duyên dáng trong tà áo dài xanh tại Kênh Gà (kenh ga.jpg)" 
-                             class="story-img w-full h-full object-cover object-top group-hover:scale-105 transition duration-500 cursor-pointer"
-                             onclick="openLightbox(this.src, 'Ảnh 5 (kenh ga.jpg): Bác sĩ Nguyễn Thị Hoa thả tim rạng ngời trong tà áo dài xanh thiên thanh tại Kênh Gà cùng những người chị em đồng đội yêu thương.')"
-                             onerror="handleImgError(this, 'kenh ga.jpg', 'Áo Dài Xanh Tại Kênh Gà (kenh ga.jpg)')">
-                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-sky-600/90 text-white text-xs font-bold shadow">
-                            <i class="fa-solid fa-heart mr-1"></i> Ảnh #05: kenh ga.jpg
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <span class="text-xs font-bold uppercase text-gold-400">Kết Nối Cộng Đồng Học Tập Tuyệt Vời</span>
-                        <h3 class="font-serif text-2xl font-bold text-white">Tỏa Sáng Dịu Dàng Tại Kênh Gà</h3>
-                        <p class="text-sm text-slate-300 leading-relaxed">
-                            Khi tâm an vui và trí tuệ khai mở, vẻ đẹp bên ngoài cũng bừng sáng. Hình ảnh chị Hoa duyên dáng tạo dáng trái tim trong tà áo dài xanh tại <strong>Kênh Gà</strong> cùng các chị em là minh chứng cho một cuộc sống hạnh phúc, trẻ trung ở tuổi nghỉ hưu.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CHƯƠNG 5: HÀNH TRÌNH TRẢI NGHIỆM DỌC ĐẤT NƯỚC (GẮN 5 ẢNH: hoàng sơn quan.jpg & 4 ẢNH NINH BÌNH) ================= -->
-        <section id="chuong-5" class="scroll-mt-24">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 border-b border-gold-500/20 pb-4">
-                <div>
-                    <span class="text-crimson-500 font-bold tracking-widest uppercase text-xs">Chương 05 • Trải Nghiệm Từ Nam Ra Bắc</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">Đi Để Học, Để Hiểu Biết, Để Tự Hào, Để Biết Ơn & Phát Triển</h2>
-                </div>
-                <span class="mt-2 md:mt-0 text-xs px-3 py-1.5 rounded-lg bg-crimson-500/15 text-crimson-500 border border-crimson-500/30 font-semibold">
-                    <i class="fa-solid fa-flag mr-1"></i> Hoàng Sơn Quan • Cố Đô Ninh Bình • Hành Trình Di Sản
-                </span>
-            </div>
-
-            <!-- Tuyên ngôn 5 chữ ĐI -->
-            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-10">
-                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-gold-400">
-                    <span class="text-gold-400 font-bold text-xs uppercase block">Ý Nghĩa #1</span>
-                    <span class="font-serif font-bold text-white text-base">Đi Để Học</span>
-                </div>
-                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-emerald-400">
-                    <span class="text-emerald-400 font-bold text-xs uppercase block">Ý Nghĩa #2</span>
-                    <span class="font-serif font-bold text-white text-base">Đi Để Hiểu Biết</span>
-                </div>
-                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-crimson-500">
-                    <span class="text-crimson-500 font-bold text-xs uppercase block">Ý Nghĩa #3</span>
-                    <span class="font-serif font-bold text-white text-base">Đi Để Tự Hào</span>
-                </div>
-                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-sky-400">
-                    <span class="text-sky-400 font-bold text-xs uppercase block">Ý Nghĩa #4</span>
-                    <span class="font-serif font-bold text-white text-base">Đi Để Biết Ơn</span>
-                </div>
-                <div class="glass-card p-4 rounded-xl text-center border-t-2 border-t-purple-400 col-span-2 sm:col-span-1">
-                    <span class="text-purple-400 font-bold text-xs uppercase block">Ý Nghĩa #5</span>
-                    <span class="font-serif font-bold text-white text-base">Đi Để Phát Triển</span>
-                </div>
-            </div>
-
-            <!-- Bức ảnh Tâm điểm Chương 5: hoàng sơn quan.jpg (Ảnh #06) -->
-            <div class="glass-card rounded-3xl p-6 sm:p-8 mb-8 border-2 border-gold-500/40 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-7 rounded-2xl overflow-hidden relative group h-80 sm:h-[420px] bg-navy-950">
-                    <img data-filename="hoàng sơn quan.jpg"
-                         src="hoàng sơn quan.jpg" 
-                         alt="Ảnh 6: Chinh phục di tích lịch sử Hoàng Sơn Quan (hoàng sơn quan.jpg)" 
-                         class="story-img w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
-                         onclick="openLightbox(this.src, 'Ảnh 6 (hoàng sơn quan.jpg): Bác sĩ Hoa trong màu áo cờ đỏ sao vàng cùng thầy và đại gia đình học tập tại di tích lịch sử Hoàng Sơn Quan.')"
-                         onerror="handleImgError(this, 'hoàng sơn quan.jpg', 'Di Tích Lịch Sử Hoàng Sơn Quan (hoàng sơn quan.jpg)')">
-                    <div class="absolute top-3 left-3 px-3.5 py-1.5 rounded-full bg-navy-950/90 text-gold-400 text-xs font-bold border border-gold-400/50">
-                        <i class="fa-solid fa-landmark mr-1"></i> Ảnh #06: hoàng sơn quan.jpg
-                    </div>
-                </div>
-                <div class="lg:col-span-5 space-y-4">
-                    <span class="px-3 py-1 rounded-full bg-crimson-500/20 text-crimson-500 text-xs font-bold uppercase">
-                        Dấu Ấn Lịch Sử Hào Hùng
-                    </span>
-                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">
-                        Từ Phòng Học Zoom Đến Đỉnh Hoàng Sơn Quan Lịch Sử
-                    </h3>
-                    <p class="text-sm sm:text-base text-slate-200 leading-relaxed">
-                        Không chỉ dừng lại ở những buổi học trực tuyến trên Zoom, chị Hoa đã có những chuyến đi thực tế vô cùng tuyệt vời dọc chiều dài đất nước. Đứng dưới cổng thành cổ kính của <strong>Hoàng Sơn Quan</strong> trong sắc áo đỏ sao vàng, mỗi thành viên đều trào dâng niềm tự hào dân tộc và lòng biết ơn sâu sắc đối với tổ tiên.
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-gray-300 leading-relaxed">
+                    <p>
+                        Năm 2024, với mong muốn tối ưu hóa dinh dưỡng chăm sóc sức khỏe, chị tham gia học viện Nutrime. Đến tháng 5/2025, bước ngoặt lớn đến khi chị bắt gặp làn sóng AI và các trang hướng dẫn tuyệt vời của thầy <strong>Trần Khánh Tự</strong> (Super AI, CMA).
                     </p>
-                </div>
-            </div>
-
-            <!-- Bộ 4 Bức Ảnh Hành Trình Ninh Bình (Ảnh #07, #08, #09, #10) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Ảnh #07: ninh bình (2).jpg -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Ảnh 7 (ninh bình (2).jpg): Nụ cười tỏa nắng và cánh tay vẫy chào đầy năng lượng của BS. Hoa cùng thầy và đồng đội trên cung đường núi đá vôi Ninh Bình.')">
-                    <div class="h-60 overflow-hidden relative bg-navy-950">
-                        <img data-filename="ninh bình (2).jpg"
-                             src="ninh bình (2).jpg" 
-                             alt="Ảnh 7: Nụ cười rạng rỡ trên cung đường Ninh Bình (ninh bình (2).jpg)" 
-                             class="story-img w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                             onerror="handleImgError(this, 'ninh bình (2).jpg', 'Năng Lượng Cung Đường Ninh Bình')">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-navy-950/90 text-gold-400 text-[11px] font-bold border border-gold-500/40">
-                            Ảnh #07: ninh bình (2).jpg
-                        </span>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-white text-sm group-hover:text-gold-400 transition">Vẫy Chào Ngày Mới Rạng Rỡ</h4>
-                        <p class="text-xs text-slate-300 mt-1">Chị Hoa (áo cam) giơ tay vẫy chào tràn đầy sức trẻ cùng thầy và những người bạn đồng hành dưới chân núi Ninh Bình.</p>
-                    </div>
-                </div>
-
-                <!-- Ảnh #08: ninh bình.jpg -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Ảnh 8 (ninh bình.jpg): Bác sĩ Hoa cầm chiếc quạt đỏ Sao Vàng Việt Nam bên cạnh người Thầy và tập thể đoàn kết tại khu di sản Ninh Bình.')">
-                    <div class="h-60 overflow-hidden relative bg-navy-950">
-                        <img data-filename="ninh bình.jpg"
-                             src="ninh bình.jpg" 
-                             alt="Ảnh 8: Cầm quạt đỏ sao vàng Việt Nam tại Ninh Bình (ninh bình.jpg)" 
-                             class="story-img w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                             onerror="handleImgError(this, 'ninh bình.jpg', 'Tự Hào Quạt Đỏ Sao Vàng Ninh Bình')">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-navy-950/90 text-emerald-400 text-[11px] font-bold border border-emerald-500/40">
-                            Ảnh #08: ninh bình.jpg
-                        </span>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-white text-sm group-hover:text-gold-400 transition">Sắc Đỏ Tự Hào Việt Nam</h4>
-                        <p class="text-xs text-slate-300 mt-1">Gắn kết yêu thương bên người thầy và đồng đội với chiếc quạt đỏ in hình Ngôi sao vàng Tổ quốc.</p>
-                    </div>
-                </div>
-
-                <!-- Ảnh #09: ninh bình 2.jpg -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Ảnh 9 (ninh bình 2.jpg): Đại gia đình học tập XAI chụp ảnh kỷ niệm dưới mái đình cổ kính rợp bóng cây xanh tại Ninh Bình.')">
-                    <div class="h-60 overflow-hidden relative bg-navy-950">
-                        <img data-filename="ninh bình 2.jpg"
-                             src="ninh bình 2.jpg" 
-                             alt="Ảnh 9: Đoàn học tập tại không gian cổ kính Ninh Bình (ninh bình 2.jpg)" 
-                             class="story-img w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                             onerror="handleImgError(this, 'ninh bình 2.jpg', 'Về Nguồn Di Sản Cổ Kính (ninh bình 2.jpg)')">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-navy-950/90 text-sky-400 text-[11px] font-bold border border-sky-500/40">
-                            Ảnh #09: ninh bình 2.jpg
-                        </span>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-white text-sm group-hover:text-gold-400 transition">Hành Trình Về Nguồn Cội</h4>
-                        <p class="text-xs text-slate-300 mt-1">Đi để lắng nghe hơi thở lịch sử dưới mái chùa, mái đình cổ kính và thêm yêu văn hóa dân tộc.</p>
-                    </div>
-                </div>
-
-                <!-- Ảnh #10: ninh bình 3.jpg -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, 'Ảnh 10 (ninh bình 3.jpg): Khoảnh khắc tuyệt đẹp trên cây cầu đá giữa non nước mây trời Ninh Bình hùng vĩ.')">
-                    <div class="h-60 overflow-hidden relative bg-navy-950">
-                        <img data-filename="ninh bình 3.jpg"
-                             src="ninh bình 3.jpg" 
-                             alt="Ảnh 10: Trên cây cầu đá giữa non nước Ninh Bình (ninh bình 3.jpg)" 
-                             class="story-img w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                             onerror="handleImgError(this, 'ninh bình 3.jpg', 'Non Nước Hữu Tình Ninh Bình (ninh bình 3.jpg)')">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-navy-950/90 text-crimson-500 text-[11px] font-bold border border-crimson-500/40">
-                            Ảnh #10: ninh bình 3.jpg
-                        </span>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-white text-sm group-hover:text-gold-400 transition">Giữa Non Nước Hùng Vĩ</h4>
-                        <p class="text-xs text-slate-300 mt-1">Thả tim trên cây cầu đá giữa trùng điệp núi non – minh chứng cho một cộng đồng cùng học tập và phát triển.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= ĐẠI SẢNH TRỌN BỘ 10 BỨC ẢNH (KIỂM TRA ĐẦY ĐỦ 10 FILE ẢNH) ================= -->
-        <section id="album-10-anh" class="scroll-mt-24">
-            <div class="glass-card rounded-3xl p-6 sm:p-10 border-2 border-gold-500/40">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-4 border-b border-gold-500/20">
-                    <div>
-                        <span class="text-gold-400 font-bold uppercase tracking-widest text-xs">📸 Thư Viện Ảnh Chuẩn Hóa GitHub</span>
-                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
-                            Đại Sảnh Trọn Bộ 10 Bức Ảnh Hành Trình Của BS. Nguyễn Thị Hoa
-                        </h2>
-                        <p class="text-xs sm:text-sm text-slate-300 mt-1">
-                            Tất cả 10 bức ảnh dưới đây đã được gắn chính xác tên file gốc để khi chị tải lên GitHub Pages là hiển thị tự động 100%.
-                        </p>
-                    </div>
-                    <label for="localImageLoader" class="cursor-pointer px-4 py-2.5 rounded-xl bg-gold-gradient text-navy-950 font-bold text-xs sm:text-sm shadow hover:opacity-90 transition text-center shrink-0">
-                        <i class="fa-solid fa-upload mr-1"></i> Chọn 10 Ảnh Từ Máy Để Xem Ngay
-                    </label>
-                </div>
-
-                <!-- Grid 5 cột hiển thị đủ 10 ảnh -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                    <!-- 1 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '1. bs Hoa.jpg - Chân dung Bác sĩ CKI. Nguyễn Thị Hoa')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="bs Hoa.jpg" src="bs Hoa.jpg" alt="bs Hoa.jpg" class="story-img w-full h-full object-cover object-top" onerror="handleImgError(this, 'bs Hoa.jpg', '1. bs Hoa.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">1. bs Hoa.jpg</p>
-                    </div>
-                    <!-- 2 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '2. hiến máu.jpg - BS. Hoa hiến máu nhân đạo cứu người')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="hiến máu.jpg" src="hiến máu.jpg" alt="hiến máu.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'hiến máu.jpg', '2. hiến máu.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">2. hiến máu.jpg</p>
-                    </div>
-                    <!-- 3 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '3. thây tro.jpg - Đồng hành cùng người Thầy truyền cảm hứng')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="thây tro.jpg" src="thây tro.jpg" alt="thây tro.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'thây tro.jpg', '3. thây tro.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">3. thây tro.jpg</p>
-                    </div>
-                    <!-- 4 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '4. yoga.jpg - Rèn luyện Thân - Tâm - Trí cùng đồng đội')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="yoga.jpg" src="yoga.jpg" alt="yoga.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'yoga.jpg', '4. yoga.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">4. yoga.jpg</p>
-                    </div>
-                    <!-- 5 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '5. kenh ga.jpg - Duyên dáng áo dài xanh tại Kênh Gà')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="kenh ga.jpg" src="kenh ga.jpg" alt="kenh ga.jpg" class="story-img w-full h-full object-cover object-top" onerror="handleImgError(this, 'kenh ga.jpg', '5. kenh ga.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">5. kenh ga.jpg</p>
-                    </div>
-                    <!-- 6 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '6. hoàng sơn quan.jpg - Chinh phục Hoàng Sơn Quan lịch sử')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="hoàng sơn quan.jpg" src="hoàng sơn quan.jpg" alt="hoàng sơn quan.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'hoàng sơn quan.jpg', '6. hoàng sơn quan.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">6. hoàng sơn quan.jpg</p>
-                    </div>
-                    <!-- 7 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '7. ninh bình (2).jpg - Vẫy tay chào đầy năng lượng tại Ninh Bình')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="ninh bình (2).jpg" src="ninh bình (2).jpg" alt="ninh bình (2).jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'ninh bình (2).jpg', '7. ninh bình (2).jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">7. ninh bình (2).jpg</p>
-                    </div>
-                    <!-- 8 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '8. ninh bình.jpg - Sắc quạt đỏ sao vàng Việt Nam')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="ninh bình.jpg" src="ninh bình.jpg" alt="ninh bình.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'ninh bình.jpg', '8. ninh bình.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">8. ninh bình.jpg</p>
-                    </div>
-                    <!-- 9 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '9. ninh bình 2.jpg - Đoàn học tập dưới mái đình cổ kính')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="ninh bình 2.jpg" src="ninh bình 2.jpg" alt="ninh bình 2.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'ninh bình 2.jpg', '9. ninh bình 2.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">9. ninh bình 2.jpg</p>
-                    </div>
-                    <!-- 10 -->
-                    <div class="bg-navy-950 rounded-xl p-2 border border-gold-500/30 hover:border-gold-400 transition cursor-pointer" onclick="openLightbox(this.querySelector('img').src, '10. ninh bình 3.jpg - Giữa non nước hữu tình Ninh Bình')">
-                        <div class="h-36 rounded-lg overflow-hidden bg-navy-900">
-                            <img data-filename="ninh bình 3.jpg" src="ninh bình 3.jpg" alt="ninh bình 3.jpg" class="story-img w-full h-full object-cover" onerror="handleImgError(this, 'ninh bình 3.jpg', '10. ninh bình 3.jpg')">
-                        </div>
-                        <p class="text-[11px] font-mono text-gold-300 mt-2 truncate text-center">10. ninh bình 3.jpg</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= KHU VỰC TƯƠNG TÁC & ÔN TẬP (FLASHCARDS + QUIZ + JOURNAL) ================= -->
-        <section id="tuong-tac" class="scroll-mt-24 pt-4">
-            <div class="glass-card rounded-3xl p-6 sm:p-10 border-2 border-gold-500/40 space-y-16">
-                
-                <div class="text-center max-w-3xl mx-auto space-y-3">
-                    <span class="px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 text-xs font-bold uppercase tracking-widest">
-                        🎯 Interactive Learning Hub • Học Tập & Thực Hành
-                    </span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
-                        Ôn Tập Tương Tác & Đúc Kết Bài Học Truyền Cảm Hứng
-                    </h2>
-                    <p class="text-slate-300 text-sm sm:text-base">
-                        Dành cho anh chị em học viên: Hãy lật mở 6 thẻ bài học cốt lõi, trả lời 5 câu hỏi trắc nghiệm và lưu lại cam kết hành động của chính mình!
+                    <p>
+                        Tiếp nối hành trình tri thức, chị tham gia các lớp học của thầy <strong>Tuấn Tử Tế</strong> như <em>Kiến Xây Đời Mới, Đời Mới XAI, Kiến Tạo Cuộc Sống XAI</em>. AI không chỉ là công cụ mà còn dạy chị về tư duy, kỷ luật, rèn luyện thân tâm trí và kết nối cộng đồng tuyệt vời. Giờ đây, chị tự tin livestream chia sẻ kiến thức, tự tay dựng website, làm video, tạo nhạc và trò chuyện với AI như một người bạn thân thiết.
                     </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="https://www.youtube.com/channel/UCOmWdSjtMU1UV4ehUA4cRUQ" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-5 py-2.5 rounded-lg text-sm transition flex items-center">
+                            <i class="fa-brands fa-youtube mr-2"></i> Kênh YouTube BS Hoa
+                        </a>
+                        <a href="https://github.com/nguenhoa137-droid/blogcanhan.github.io" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-bold px-5 py-2.5 rounded-lg text-sm transition flex items-center border border-gray-700">
+                            <i class="fa-brands fa-github mr-2"></i> Kho lưu trữ Website
+                        </a>
+                    </div>
                 </div>
-
-                <!-- 1. BỘ 6 THẺ LẬT 3D FLASHCARDS -->
                 <div>
-                    <h3 class="font-serif text-2xl font-bold text-gold-400 flex items-center gap-2 mb-6">
-                        <i class="fa-solid fa-layer-group"></i> 1. Bộ 6 Thẻ Lật 3D Đúc Kết Từ Cuộc Đời BS. Hoa (Chạm Để Lật)
-                    </h3>
+                    <img src="thây tro.jpg" alt="Thầy trò trong hành trình XAI" class="rounded-2xl shadow-2xl border border-gold-500/30 w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Card 1 -->
-                        <div class="flip-card h-60 cursor-pointer perspective-1000" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-navy-950 border border-gold-500/40 p-6 flex flex-col justify-between">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-xs font-bold text-gold-400 uppercase">Bài Học #01</span>
-                                        <i class="fa-solid fa-rotate text-gold-400"></i>
-                                    </div>
-                                    <div class="my-auto text-center">
-                                        <i class="fa-solid fa-seedling text-3xl text-emerald-400 mb-3"></i>
-                                        <h4 class="font-serif text-xl font-bold text-white">Vượt Qua Nghịch Cảnh</h4>
-                                    </div>
-                                    <p class="text-[11px] text-center text-slate-400">Chạm để lật xem chi tiết</p>
-                                </div>
-                                <div class="flip-card-back bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-emerald-400 p-6 flex flex-col justify-center text-center">
-                                    <h5 class="text-emerald-400 font-bold text-sm mb-2">Từ Hạt Ngô Nghèo Sơn Trung</h5>
-                                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                                        Bố mẹ nghèo chắt chiu từng hạt cơm hạt ngô nhưng cả 6 anh chị em đều tự giác học giỏi đứng Top đầu trường (Giáo viên, Bộ đội, Kỹ sư Hàng không, Bác sĩ).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Chapter 4: Thân - Tâm - Trí & Trải Nghiệm Xuyên Việt -->
+    <section id="than-tam-tri" class="py-20 bg-navy-800/50 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 font-semibold tracking-widest uppercase text-sm">Chương 4</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Rèn Luyện Thân - Tâm - Trí & Trải Nghiệm Xuyên Việt</h3>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-gray-400 mt-4">"Đi để học, đi để hiểu biết, đi để tự hào, đi để biết ơn và đi để phát triển."</p>
+            </div>
 
-                        <!-- Card 2 -->
-                        <div class="flip-card h-60 cursor-pointer perspective-1000" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-navy-950 border border-gold-500/40 p-6 flex flex-col justify-between">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-xs font-bold text-gold-400 uppercase">Bài Học #02</span>
-                                        <i class="fa-solid fa-rotate text-gold-400"></i>
-                                    </div>
-                                    <div class="my-auto text-center">
-                                        <i class="fa-solid fa-heart-pulse text-3xl text-crimson-500 mb-3"></i>
-                                        <h4 class="font-serif text-xl font-bold text-white">Chuyển Hóa Nỗi Đau</h4>
-                                    </div>
-                                    <p class="text-[11px] text-center text-slate-400">Chạm để lật xem chi tiết</p>
-                                </div>
-                                <div class="flip-card-back bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-crimson-500 p-6 flex flex-col justify-center text-center">
-                                    <h5 class="text-crimson-500 font-bold text-sm mb-2">Lời Thề Năm Thứ 5 Đại Học Y</h5>
-                                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                                        Biến nỗi đau mất bố vì bệnh ung thư trong cảnh nghèo khó thành động lực hơn 30 năm cứu người ở Khoa Nhi, Khoa HSCC và Tim mạch Lão học.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="flip-card h-60 cursor-pointer perspective-1000" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-navy-950 border border-gold-500/40 p-6 flex flex-col justify-between">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-xs font-bold text-gold-400 uppercase">Bài Học #03</span>
-                                        <i class="fa-solid fa-rotate text-gold-400"></i>
-                                    </div>
-                                    <div class="my-auto text-center">
-                                        <i class="fa-solid fa-infinity text-3xl text-gold-400 mb-3"></i>
-                                        <h4 class="font-serif text-xl font-bold text-white">Học Tập Suốt Đời</h4>
-                                    </div>
-                                    <p class="text-[11px] text-center text-slate-400">Chạm để lật xem chi tiết</p>
-                                </div>
-                                <div class="flip-card-back bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-gold-400 p-6 flex flex-col justify-center text-center">
-                                    <h5 class="text-gold-400 font-bold text-sm mb-2">Không Ngừng Mở Rộng Tri Thức</h5>
-                                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                                        Nghỉ hưu không phải dừng lại: Năm 2024 học Dinh dưỡng Nutrime; năm 2025 học Super AI, CMA (thầy Trần Khánh Tự) và Đời Mới XAI (thầy Tuấn Tử Tế).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="flip-card h-60 cursor-pointer perspective-1000" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-navy-950 border border-gold-500/40 p-6 flex flex-col justify-between">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-xs font-bold text-gold-400 uppercase">Bài Học #04</span>
-                                        <i class="fa-solid fa-rotate text-gold-400"></i>
-                                    </div>
-                                    <div class="my-auto text-center">
-                                        <i class="fa-solid fa-robot text-3xl text-sky-400 mb-3"></i>
-                                        <h4 class="font-serif text-xl font-bold text-white">Làm Bạn Cùng AI</h4>
-                                    </div>
-                                    <p class="text-[11px] text-center text-slate-400">Chạm để lật xem chi tiết</p>
-                                </div>
-                                <div class="flip-card-back bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-sky-400 p-6 flex flex-col justify-center text-center">
-                                    <h5 class="text-sky-400 font-bold text-sm mb-2">Tự Tin Sáng Tạo Đa Kênh</h5>
-                                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                                        Trò chuyện với AI thân thiện như bạn bè, tự tin Livestream FB, làm YouTube, tạo ảnh/video/phim tự động, sáng tác nhạc và lập trình Website GitHub.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 -->
-                        <div class="flip-card h-60 cursor-pointer perspective-1000" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-navy-950 border border-gold-500/40 p-6 flex flex-col justify-between">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-xs font-bold text-gold-400 uppercase">Bài Học #05</span>
-                                        <i class="fa-solid fa-rotate text-gold-400"></i>
-                                    </div>
-                                    <div class="my-auto text-center">
-                                        <i class="fa-solid fa-person-running text-3xl text-emerald-400 mb-3"></i>
-                                        <h4 class="font-serif text-xl font-bold text-white">Kỷ Luật Thân – Tâm – Trí</h4>
-                                    </div>
-                                    <p class="text-[11px] text-center text-slate-400">Chạm để lật xem chi tiết</p>
-                                </div>
-                                <div class="flip-card-back bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-emerald-400 p-6 flex flex-col justify-center text-center">
-                                    <h5 class="text-emerald-400 font-bold text-sm mb-2">Marathon & Yoga Mỗi Ngày</h5>
-                                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                                        Rèn luyện tính kỷ luật bản thân qua bước chạy đường dài Marathon và những buổi đồng diễn Yoga tràn đầy năng lượng cùng cộng đồng.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 -->
-                        <div class="flip-card h-60 cursor-pointer perspective-1000" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front bg-navy-950 border border-gold-500/40 p-6 flex flex-col justify-between">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-xs font-bold text-gold-400 uppercase">Bài Học #06</span>
-                                        <i class="fa-solid fa-rotate text-gold-400"></i>
-                                    </div>
-                                    <div class="my-auto text-center">
-                                        <i class="fa-solid fa-compass text-3xl text-amber-400 mb-3"></i>
-                                        <h4 class="font-serif text-xl font-bold text-white">5 Giá Trị Của Những Chuyến Đi</h4>
-                                    </div>
-                                    <p class="text-[11px] text-center text-slate-400">Chạm để lật xem chi tiết</p>
-                                </div>
-                                <div class="flip-card-back bg-gradient-to-br from-navy-800 to-navy-950 border-2 border-amber-400 p-6 flex flex-col justify-center text-center">
-                                    <h5 class="text-amber-400 font-bold text-sm mb-2">Từ Nam Ra Bắc</h5>
-                                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                                        Đến những địa danh lịch sử dọc chiều dài đất nước: Đi để học, đi để hiểu biết, đi để tự hào, đi để biết ơn và đi để phát triển.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Image Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="group relative overflow-hidden rounded-xl border border-gold-500/20 shadow-xl">
+                    <img src="yoga.jpg" alt="Tập Yoga và Dân Vũ" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent opacity-80 flex items-end p-4">
+                        <p class="text-sm font-bold text-gold-500"><i class="fa-solid fa-person-running mr-1"></i> Kỷ luật Thân - Tâm - Trí mỗi ngày</p>
                     </div>
                 </div>
-
-                <!-- 2. TRẮC NGHIỆM TƯƠNG TÁC 5 CÂU -->
-                <div class="pt-6 border-t border-gold-500/20">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-gold-400 flex items-center gap-2">
-                                <i class="fa-solid fa-circle-question"></i> 2. Trắc Nghiệm Ôn Tập Bài Giảng (5 Câu Hỏi)
-                            </h3>
-                            <p class="text-xs text-slate-300 mt-1">Kiểm tra nhanh những dấu ấn truyền cảm hứng trong câu chuyện cuộc đời BS. Nguyễn Thị Hoa.</p>
-                        </div>
-                        <div class="px-4 py-2 rounded-xl bg-navy-950 border border-gold-500/40 text-sm font-bold">
-                            Điểm số: <span id="quizScore" class="text-emerald-400 text-lg">0/5</span>
-                        </div>
-                    </div>
-
-                    <div id="quizContainer" class="space-y-6"></div>
-
-                    <div class="mt-6 flex justify-end">
-                        <button onclick="resetQuiz()" class="px-5 py-2.5 rounded-xl bg-navy-800 hover:bg-navy-700 text-gold-300 border border-gold-500/30 text-xs font-bold transition">
-                            <i class="fa-solid fa-rotate-right mr-1"></i> Làm lại trắc nghiệm
-                        </button>
+                <div class="group relative overflow-hidden rounded-xl border border-gold-500/20 shadow-xl">
+                    <img src="kenh ga.jpg" alt="Kênh Gà Ninh Bình" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent opacity-80 flex items-end p-4">
+                        <p class="text-sm font-bold text-gold-500"><i class="fa-solid fa-shirt mr-1"></i> Áo dài xanh duyên dáng tại Kênh Gà</p>
                     </div>
                 </div>
+                <div class="group relative overflow-hidden rounded-xl border border-gold-500/20 shadow-xl">
+                    <img src="hoang-son-quan.jpg" alt="Hoàng Sơn Quan" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent opacity-80 flex items-end p-4">
+                        <p class="text-sm font-bold text-gold-500"><i class="fa-solid fa-landmark mr-1"></i> Trải nghiệm lịch sử Hoàng Sơn Quan</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl border border-gold-500/20 shadow-xl">
+                    <img src="ninh-binh.jpg" alt="Hành trình Xuyên Việt" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent opacity-80 flex items-end p-4">
+                        <p class="text-sm font-bold text-gold-500"><i class="fa-solid fa-flag mr-1"></i> Đoàn kết sắc cờ tổ quốc dọc chiều dài đất nước</p>
+                    </div>
+                </div>
+            </div>
 
-                <!-- 3. SỔ TAY SUY NGẪM & CAM KẾT (LOCALSTORAGE) -->
-                <div class="pt-6 border-t border-gold-500/20">
-                    <h3 class="font-serif text-2xl font-bold text-gold-400 flex items-center gap-2 mb-2">
-                        <i class="fa-solid fa-pen-nib"></i> 3. Sổ Tay Suy Ngẫm & Thực Hành Theo Tấm Gương BS. Hoa
-                    </h3>
-                    <p class="text-sm text-slate-300 mb-6">
-                        Hãy viết lại cảm nhận và kế hoạch hành động của bạn ngay bên dưới (Tự động lưu trên trình duyệt của bạn):
-                    </p>
+            <!-- Additional photos carousel / grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="ninh-binh-2.jpg" alt="Ninh Bình 2" class="rounded-lg h-40 w-full object-cover border border-gold-500/20 shadow-md">
+                <img src="ninh-binh-3.jpg" alt="Ninh Bình 3" class="rounded-lg h-40 w-full object-cover border border-gold-500/20 shadow-md">
+                <img src="ninh-binh-2-1.jpg" alt="Ninh Bình 2.1" class="rounded-lg h-40 w-full object-cover border border-gold-500/20 shadow-md">
+                <img src="ninh-binh-3-1.jpg" alt="Ninh Bình 3.1" class="rounded-lg h-40 w-full object-cover border border-gold-500/20 shadow-md">
+            </div>
+        </div>
+    </section>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-gold-300 mb-2">
-                                1. Bài học nào từ cuộc đời BS. Hoa truyền cảm hứng mạnh mẽ nhất cho bạn?
+    <!-- Interactive Learning Hub: Flashcards & Quiz -->
+    <section id="tuong-tac" class="py-20 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 font-semibold tracking-widest uppercase text-sm">Góc Ôn Tập & Tương Tác</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Trắc Nghiệm & Flashcards Truyền Cảm Hứng</h3>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Quiz Container -->
+            <div class="bg-navy-800 p-8 rounded-2xl border border-gold-500/30 shadow-2xl max-w-3xl mx-auto mb-16">
+                <h4 class="font-serif text-2xl font-bold text-gold-500 mb-6 flex items-center">
+                    <i class="fa-solid fa-circle-question mr-3"></i> Thử Thách Kiến Thức Hành Trình BS Hoa
+                </h4>
+                <div id="quiz-container" class="space-y-6">
+                    <div class="quiz-step">
+                        <p class="font-semibold text-lg mb-4 text-gray-200">Câu 1: BS Nguyễn Thị Hoa đã có bao nhiêu năm công tác tại Bệnh viện Quốc Oai trước khi nghỉ hưu?</p>
+                        <div class="space-y-3">
+                            <label class="block p-4 rounded-xl bg-navy-900 border border-gray-700 hover:border-gold-500 cursor-pointer transition">
+                                <input type="radio" name="q1" value="a" class="mr-3"> Hơn 10 năm
                             </label>
-                            <textarea id="journalInput1" rows="4" placeholder="Chia sẻ cảm nhận của bạn..." class="w-full rounded-xl bg-navy-950 border border-gold-500/30 p-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400"></textarea>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">
-                                2. Bạn sẽ thực hành ngay kỹ năng AI và thói quen rèn luyện Thân - Tâm - Trí nào?
+                            <label class="block p-4 rounded-xl bg-navy-900 border border-gray-700 hover:border-gold-500 cursor-pointer transition">
+                                <input type="radio" name="q1" value="b" class="mr-3"> Hơn 20 năm
                             </label>
-                            <textarea id="journalInput2" rows="4" placeholder="Ví dụ: Học làm Website HTML đưa lên GitHub, tự tin Livestream, chạy bộ mỗi sáng..." class="w-full rounded-xl bg-navy-950 border border-emerald-500/30 p-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400"></textarea>
+                            <label class="block p-4 rounded-xl bg-navy-900 border border-gray-700 hover:border-gold-500 cursor-pointer transition">
+                                <input type="radio" name="q1" value="c" class="mr-3 correct"> Hơn 30 năm (10 năm Nhi, 10 năm HSCC, >10 năm Nội Tim Mạch Lão Học)
+                            </label>
                         </div>
                     </div>
-
-                    <div class="flex flex-wrap items-center justify-between gap-4">
-                        <span id="saveStatus" class="text-xs text-emerald-400 font-medium">
-                            <i class="fa-solid fa-cloud-check mr-1"></i> Sẵn sàng lưu trữ trực tiếp trên trình duyệt.
-                        </span>
-                        <div class="flex gap-3">
-                            <button onclick="saveJournal()" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-navy-950 font-bold text-xs sm:text-sm transition shadow-md">
-                                <i class="fa-solid fa-floppy-disk mr-1"></i> Lưu Suy Ngẫm
-                            </button>
-                            <button onclick="downloadJournal()" class="px-5 py-2.5 rounded-xl bg-gold-gradient text-navy-950 font-bold text-xs sm:text-sm transition shadow-md">
-                                <i class="fa-solid fa-download mr-1"></i> Tải Bản Cam Kết (.txt)
-                            </button>
-                        </div>
-                    </div>
+                    <button onclick="checkQuiz()" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold py-3.5 rounded-xl shadow-lg transition">
+                        Nộp Bài & Nhận Phản Hồi
+                    </button>
+                    <div id="quiz-result" class="hidden p-4 rounded-xl bg-emerald-600/20 border border-emerald-500 text-emerald-300 font-semibold text-center"></div>
                 </div>
-
             </div>
-        </section>
 
-        <!-- ================= KẾT NỐI ĐA KÊNH & HƯỚNG DẪN ĐẨY LÊN GITHUB ================= -->
-        <section id="ket-noi" class="scroll-mt-24">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                
-                <!-- Cột Liên Kết Mạng Xã Hội -->
-                <div class="lg:col-span-7 glass-card rounded-3xl p-6 sm:p-8 space-y-6">
-                    <div>
-                        <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Hệ Sinh Thái Chia Sẻ Giá Trị</span>
-                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">Kết Nối Cùng Bác Sĩ Nguyễn Thị Hoa</h2>
-                        <p class="text-sm text-slate-300 mt-1">
-                            Theo dõi kênh YouTube âm nhạc & video AI, các trang Facebook chia sẻ kiến thức và kho GitHub của chị Hoa:
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                        <a href="https://www.youtube.com/channel/UCOmWdSjtMU1UV4ehUA4cRUQ" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-navy-950 hover:bg-red-600/20 border border-red-500/40 flex items-center gap-3.5 group transition">
-                            <div class="w-11 h-11 rounded-lg bg-red-600 flex items-center justify-center text-white text-xl shrink-0">
-                                <i class="fa-brands fa-youtube"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <span class="font-bold text-white text-sm block group-hover:text-red-400 transition">Kênh YouTube Bác Sĩ Hoa</span>
-                                <span class="text-xs text-slate-400 truncate block">Nhạc AI, Video tự động & Sức khỏe</span>
-                            </div>
-                        </a>
-
-                        <a href="https://www.facebook.com/nguyen.thi.hoa.527569/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-navy-950 hover:bg-blue-600/20 border border-blue-500/40 flex items-center gap-3.5 group transition">
-                            <div class="w-11 h-11 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xl shrink-0">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <span class="font-bold text-white text-sm block group-hover:text-blue-400 transition">FB Cá Nhân Nguyễn Thị Hoa</span>
-                                <span class="text-xs text-slate-400 truncate block">Livestream chia sẻ & Kết nối bạn bè</span>
-                            </div>
-                        </a>
-
-                        <a href="https://www.facebook.com/PK.BacSiHoa" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-navy-950 hover:bg-emerald-600/20 border border-emerald-500/40 flex items-center gap-3.5 group transition">
-                            <div class="w-11 h-11 rounded-lg bg-emerald-600 flex items-center justify-center text-white text-xl shrink-0">
-                                <i class="fa-solid fa-user-doctor"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <span class="font-bold text-white text-sm block group-hover:text-emerald-400 transition">Phòng Khám Bác Sĩ Hoa</span>
-                                <span class="text-xs text-slate-400 truncate block">Tư vấn Y khoa & Chăm sóc sức khỏe</span>
-                            </div>
-                        </a>
-
-                        <a href="https://www.facebook.com/profile.php?id=61584972072903" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-navy-950 hover:bg-gold-500/20 border border-gold-500/40 flex items-center gap-3.5 group transition">
-                            <div class="w-11 h-11 rounded-lg bg-gold-500 flex items-center justify-center text-navy-950 text-xl shrink-0">
-                                <i class="fa-solid fa-sun"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <span class="font-bold text-white text-sm block group-hover:text-gold-400 transition">Trang Chia Sẻ Năng Lượng #1</span>
-                                <span class="text-xs text-slate-400 truncate block">Dinh dưỡng, Thân - Tâm - Trí & XAI</span>
-                            </div>
-                        </a>
-
-                        <a href="https://www.facebook.com/profile.php?id=61583979149075" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-navy-950 hover:bg-purple-500/20 border border-purple-500/40 flex items-center gap-3.5 group transition">
-                            <div class="w-11 h-11 rounded-lg bg-purple-600 flex items-center justify-center text-white text-xl shrink-0">
-                                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <span class="font-bold text-white text-sm block group-hover:text-purple-400 transition">Trang Sáng Tạo Kỷ Nguyên XAI #2</span>
-                                <span class="text-xs text-slate-400 truncate block">Lan tỏa tinh thần học tập suốt đời</span>
-                            </div>
-                        </a>
-
-                        <a href="https://github.com/nguenhoa137-droid/blogcanhan.github.io" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-navy-950 hover:bg-slate-700/40 border border-slate-500/40 flex items-center gap-3.5 group transition">
-                            <div class="w-11 h-11 rounded-lg bg-slate-200 flex items-center justify-center text-navy-950 text-xl shrink-0">
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <div class="overflow-hidden">
-                                <span class="font-bold text-white text-sm block group-hover:text-gold-400 transition">GitHub: blogcanhan.github.io</span>
-                                <span class="text-xs text-slate-400 truncate block">Website Bài Giảng Tương Tác</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Cột Hướng Dẫn Đưa File index.html + 10 Ảnh Lên GitHub -->
-                <div class="lg:col-span-5 glass-card rounded-3xl p-6 sm:p-8 border-2 border-emerald-500/40 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase">
-                            🚀 Quy Trình Chuẩn Đưa Lên GitHub
-                        </span>
-                        <h3 class="font-serif text-2xl font-bold text-white">
-                            3 Bước Để Hiển Thị Cả Bài Giảng & 10 Bức Ảnh Trên Website
-                        </h3>
-                        <ol class="space-y-3 text-xs sm:text-sm text-slate-200">
-                            <li class="p-3 rounded-xl bg-navy-950/90 border border-gold-500/20">
-                                <strong class="text-gold-400">Bước 1:</strong> Bấm nút <strong>"Xem & Copy Mã Nguồn HTML"</strong> bên dưới để lưu thành file <code class="text-emerald-400 font-mono">index.html</code> trên máy tính.
-                            </li>
-                            <li class="p-3 rounded-xl bg-navy-950/90 border border-gold-500/20">
-                                <strong class="text-gold-400">Bước 2:</strong> Mở kho GitHub <a href="https://github.com/nguenhoa137-droid/blogcanhan.github.io" target="_blank" class="underline text-emerald-400">blogcanhan.github.io</a>, chọn <strong>Add file &rarr; Upload files</strong>.
-                            </li>
-                            <li class="p-3 rounded-xl bg-navy-950/90 border border-gold-500/20">
-                                <strong class="text-gold-400">Bước 3:</strong> Tải file <code class="text-emerald-400 font-mono">index.html</code> cùng <strong>đủ 10 file ảnh gốc</strong> (<code class="text-slate-300">bs Hoa.jpg, hiến máu.jpg, thây tro.jpg, yoga.jpg, kenh ga.jpg, hoàng sơn quan.jpg, ninh bình.jpg, ninh bình (2).jpg, ninh bình 2.jpg, ninh bình 3.jpg</code>) lên rồi bấm <strong>Commit changes</strong>.
-                            </li>
-                        </ol>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-gold-500/20 flex flex-wrap items-center justify-between gap-3">
-                        <button onclick="openSourceCodeModal()" class="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-bold text-xs shadow transition">
-                            <i class="fa-solid fa-copy mr-1"></i> Xem & Copy Mã Nguồn HTML
-                        </button>
-                        <a href="https://github.com/nguenhoa137-droid/blogcanhan.github.io" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gold-gradient text-navy-950 font-bold text-xs shadow hover:opacity-90 transition">
-                            Mở GitHub Của Chị <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
+            <!-- Notes & Reflection Area -->
+            <div class="bg-navy-800 p-8 rounded-2xl border border-gold-500/30 shadow-2xl max-w-3xl mx-auto">
+                <h4 class="font-serif text-2xl font-bold text-gold-500 mb-4 flex items-center">
+                    <i class="fa-solid fa-pen-nib mr-3"></i> Sổ Tay Suy Ngẫm & Cam Kết Hành Động
+                </h4>
+                <p class="text-sm text-gray-400 mb-4">Hãy viết lại bài học tâm đắc nhất từ câu chuyện của BS Hoa để lưu vào trình duyệt của bạn:</p>
+                <textarea id="userNote" rows="4" class="w-full bg-navy-900 border border-gray-700 rounded-xl p-4 text-gray-200 focus:border-gold-500 focus:outline-none" placeholder="Hôm nay tôi học được tính kỷ luật, sự kiên trì và tinh thần học hỏi không ngừng ở tuổi 58..."></textarea>
+                <button onclick="saveNote()" class="mt-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">
+                    Lưu Suy Ngẫm Vào Máy
+                </button>
+                <p id="saveStatus" class="text-xs text-emerald-400 mt-2 hidden">Đã lưu thành công vào trình duyệt!</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-navy-950 border-t border-gold-500/20 py-10 text-center text-xs text-slate-400">
-        <div class="max-w-7xl mx-auto px-4 space-y-2">
-            <p class="font-serif text-base text-gold-400 font-bold">BÁC SĨ CKI. NGUYỄN THỊ HOA – TỪ HẠT NGÔ NGHÈO SƠN TRUNG ĐẾN KỶ NGUYÊN XAI</p>
-            <p>Quê hương: Sơn Trung – Quốc Oai – Hà Nội • Phòng khám Bác sĩ Hoa • ĐT/Zalo: 0385.168.303</p>
+    <!-- Footer & Links -->
+    <footer class="bg-navy-900 border-t border-gold-500/20 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="font-serif text-3xl font-bold text-gold-500">BS NGUYỄN THỊ HOA - NĂNG LƯỢNG SỐNG KHỎE</h2>
+            <p class="text-gray-400 max-w-xl mx-auto text-sm">Phòng khám Nội và Siêu âm tại nhà: số 27 đường 17/8, xã Phủ Quốc, huyện Quốc Oai, Hà Nội.</p>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="https://www.youtube.com/channel/UCOmWdSjtMU1UV4ehUA4cRUQ" target="_blank" class="text-red-500 hover:scale-110 transition"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/nguyen.thi.hoa.527569/" target="_blank" class="text-blue-500 hover:scale-110 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/nguenhoa137-droid/blogcanhan.github.io" target="_blank" class="text-gray-300 hover:scale-110 transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-xs text-gray-500">
+                &copy; 2026 BS Nguyễn Thị Hoa. Đã đăng ký bản quyền trang bài giảng tương tác số.
+            </div>
         </div>
     </footer>
 
-    <!-- LIGHTBOX MODAL XEM ẢNH PHÓNG TO -->
-    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-navy-950/95 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
-        <div class="max-w-4xl w-full relative" onclick="event.stopPropagation()">
-            <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-gold-400 text-xl font-bold px-3 py-1">
-                <i class="fa-solid fa-xmark"></i> Đóng
-            </button>
-            <img id="lightboxImg" src="" alt="Hình ảnh phóng to" class="w-full max-h-[78vh] object-contain rounded-2xl border-2 border-gold-500/50 shadow-2xl bg-navy-900">
-            <p id="lightboxCaption" class="mt-4 text-center text-sm sm:text-base text-gold-300 font-medium"></p>
-        </div>
-    </div>
-
-    <!-- MODAL HIỂN THỊ & COPY TOÀN BỘ MÃ NGUỒN HTML -->
-    <div id="sourceCodeModal" class="fixed inset-0 z-50 hidden bg-navy-950/95 backdrop-blur-md flex items-center justify-center p-4">
-        <div class="max-w-5xl w-full glass-card rounded-3xl p-6 border-2 border-gold-500/50 flex flex-col max-h-[90vh]">
-            <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-gold-500/20">
-                <div>
-                    <h3 class="font-serif text-xl font-bold text-gold-400">Toàn Bộ Mã Nguồn HTML (Đã Gắn Đủ 10 Ảnh)</h3>
-                    <p class="text-xs text-slate-300">Chị bấm "Sao Chép Toàn Bộ Mã Nguồn" để dán vào file <code class="text-emerald-400">index.html</code> trên GitHub nhé!</p>
-                </div>
-                <div class="flex items-center gap-3">
-                    <button onclick="copyFullSourceCode()" id="copySourceBtn" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-bold text-xs sm:text-sm transition shadow">
-                        <i class="fa-solid fa-copy mr-1"></i> Sao Chép Toàn Bộ Mã Nguồn
-                    </button>
-                    <button onclick="closeSourceCodeModal()" class="px-3 py-2 rounded-xl bg-navy-800 hover:bg-navy-700 text-slate-300 text-xs sm:text-sm font-bold">
-                        Đóng
-                    </button>
-                </div>
-            </div>
-            <textarea id="rawSourceCodeArea" readonly class="w-full flex-1 mt-4 p-4 rounded-xl bg-navy-950 text-emerald-300 font-mono text-xs border border-gold-500/30 focus:outline-none overflow-y-auto"></textarea>
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT XỬ LÝ TƯƠNG TÁC & ĐỒNG BỘ 10 BỨC ẢNH -->
+    <!-- JavaScript Interactive Handlers -->
     <script>
-        // 1. Tự động thử đường dẫn encodeURI nếu tên file có dấu cách hoặc tiếng Việt, hoặc hiển thị khung hướng dẫn đẹp mắt
-        function handleImgError(imgEl, rawFilename, titleText) {
-            const triedEncoded = imgEl.getAttribute('data-tried-encoded');
-            if (!triedEncoded) {
-                imgEl.setAttribute('data-tried-encoded', 'true');
-                imgEl.src = encodeURI(rawFilename);
-                return;
+        // Scroll Progress
+        window.onscroll = function() {
+            let winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Quiz Checker
+        function checkQuiz() {
+            const correct = document.querySelector('input.correct');
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.remove('hidden');
+            if(correct && correct.checked) {
+                resultDiv.innerHTML = "🎉 Chính xác tuyệt đối! BS Hoa đã cống hiến hơn 30 năm y đức trọn vẹn tại Bệnh viện Quốc Oai trước khi nghỉ hưu và bước sang kỷ nguyên số đầy truyền cảm hứng.";
+                resultDiv.className = "p-4 rounded-xl bg-emerald-600/20 border border-emerald-500 text-emerald-300 font-semibold text-center";
+            } else {
+                resultDiv.innerHTML = "❌ Chưa chính xác lắm. Đáp án đúng là hơn 30 năm y nghiệp (10 năm Nhi, 10 năm HSCC, >10 năm Nội Tim Mạch Lão Học). Hãy thử lại nhé!";
+                resultDiv.className = "p-4 rounded-xl bg-red-600/20 border border-red-500 text-red-300 font-semibold text-center";
             }
-            // Tạo SVG 안내 sang trọng nếu mở ở môi trường chưa có file ảnh cục bộ
-            const svgPlaceholder = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
-                <rect width="100%" height="100%" fill="#0A1128"/>
-                <rect x="16" y="16" width="568" height="418" rx="16" fill="#111D40" stroke="#D4AF37" stroke-width="2" stroke-dasharray="8 6"/>
-                <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="#D4AF37" font-family="Inter, sans-serif" font-size="20" font-weight="bold">${titleText}</text>
-                <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="16">File gắn sẵn: "${rawFilename}"</text>
-                <text x="50%" y="66%" dominant-baseline="middle" text-anchor="middle" fill="#CBD5E1" font-family="Inter, sans-serif" font-size="13">Bấm nút "Nạp 10 Ảnh Từ Máy Tính" ở trên cùng để xem ngay</text>
-                <text x="50%" y="74%" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="Inter, sans-serif" font-size="12">hoặc đặt chung thư mục với index.html trên GitHub</text>
-            </svg>`;
-            imgEl.onerror = null;
-            imgEl.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(svgPlaceholder);
         }
 
-        // 2. Công cụ nạp 10 ảnh trực tiếp từ máy tính của chị Hoa để hiển thị tức thì
-        function normalizeName(str) {
-            return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]/g, '');
-        }
-
-        function handleLocalImages(files) {
-            if (!files || files.length === 0) return;
-            let matchedCount = 0;
-            const allStoryImgs = document.querySelectorAll('img.story-img');
-
-            Array.from(files).forEach(file => {
-                const fileUrl = URL.createObjectURL(file);
-                const cleanUploaded = normalizeName(file.name);
-
-                allStoryImgs.forEach(img => {
-                    const targetName = img.getAttribute('data-filename') || '';
-                    const cleanTarget = normalizeName(targetName);
-                    if (targetName.toLowerCase() === file.name.toLowerCase() || cleanTarget === cleanUploaded) {
-                        img.src = fileUrl;
-                        matchedCount++;
-                    }
-                });
-            });
-
-            const statusEl = document.getElementById('imageLoadStatus');
-            statusEl.classList.remove('hidden');
-            statusEl.innerHTML = `<i class="fa-solid fa-circle-check mr-1"></i> Đã nạp và hiển thị thành công ${files.length} bức ảnh trực tiếp vào các chương bài giảng!`;
-        }
-
-        // 3. Xem & Copy toàn bộ mã nguồn HTML
-        function openSourceCodeModal() {
-            const modal = document.getElementById('sourceCodeModal');
-            const area = document.getElementById('rawSourceCodeArea');
-            const fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-            area.value = fullHtml;
-            modal.classList.remove('hidden');
-        }
-
-        function closeSourceCodeModal() {
-            document.getElementById('sourceCodeModal').classList.add('hidden');
-        }
-
-        function copyFullSourceCode() {
-            const area = document.getElementById('rawSourceCodeArea');
-            area.select();
-            document.execCommand('copy');
-            const btn = document.getElementById('copySourceBtn');
-            btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Đã Sao Chép Thành Công!';
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fa-solid fa-copy mr-1"></i> Sao Chép Toàn Bộ Mã Nguồn';
-            }, 3000);
-        }
-
-        // 4. Thanh đo tiến độ đọc bài (Scroll Progress Bar)
-        window.addEventListener('scroll', () => {
-            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const percent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
-            document.getElementById('scrollProgress').style.width = percent + '%';
-        });
-
-        // 5. Menu Mobile
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-        });
-
-        // 6. Lightbox phóng to ảnh
-        function openLightbox(src, caption) {
-            const modal = document.getElementById('lightboxModal');
-            const img = document.getElementById('lightboxImg');
-            const cap = document.getElementById('lightboxCaption');
-            img.src = src;
-            cap.textContent = caption;
-            modal.classList.remove('hidden');
-        }
-        function closeLightbox() {
-            document.getElementById('lightboxModal').classList.add('hidden');
-        }
-
-        // 7. Hệ thống Trắc Nghiệm Tương Tác (5 câu hỏi)
-        const quizData = [
-            {
-                question: "Câu 1: Sinh ra trong gia đình nông nghiệp nghèo có 6 anh chị em tại Sơn Trung – Quốc Oai, biến cố nào ở năm thứ 5 Đại học Y Hà Nội đã hun đúc khát vọng cứu người cháy bỏng của chị Hoa?",
-                options: [
-                    "A. Được nhận học bổng du học nước ngoài.",
-                    "B. Bố chị qua đời vì căn bệnh ung thư nặng và gia đình lúc ấy quá nghèo khó.",
-                    "C. Chuyển sang học chuyên ngành Kinh tế.",
-                    "D. Mở công ty dược phẩm tư nhân."
-                ],
-                correct: 1,
-                explanation: "Chính nỗi đau mất cha vì bệnh ung thư năm thứ 5 Đại học Y trong cảnh gia đình nghèo khó đã trở thành động lực lớn lao để chị tận hiến cứu chữa người bệnh."
-            },
-            {
-                question: "Câu 2: Trong hơn 30 năm làm Bác sĩ trước khi nghỉ hưu cách đây 2 năm, chị Hoa đã cống hiến tại những chuyên khoa nào?",
-                options: [
-                    "A. 10 năm Khoa Nhi, học CKI và làm lãnh đạo Khoa Hồi sức cấp cứu (HSCC) 10 năm, những năm còn lại làm tại Khoa Tim mạch Lão học.",
-                    "B. Chỉ công tác tại khoa Răng Hàm Mặt.",
-                    "C. Làm việc tại phòng hành chính kế toán.",
-                    "D. Chỉ làm việc tại trạm y tế xã."
-                ],
-                correct: 0,
-                explanation: "Hơn 30 năm tận hiến của chị đi qua 3 chuyên khoa trọng điểm: Khoa Nhi (10 năm), Lãnh đạo Khoa HSCC (10 năm) và Khoa Tim mạch Lão học."
-            },
-            {
-                question: "Câu 3: Từ năm 2024 đến 2025, chị Hoa đã tham gia học tập tại những học viện và cùng những người thầy nào?",
-                options: [
-                    "A. Chỉ ở nhà an hưởng tuổi hưu, không đi học.",
-                    "B. Học Dinh dưỡng tại Học viện Nutrime (2024), học Super AI & lớp CMA của thầy Trần Khánh Tự (2025), và các khóa Kiến Xây Đời Mới, Đời Mới XAI, Kiến Tạo Cuộc Sống XAI của thầy Tuấn Tử Tế.",
-                    "C. Học chuyên ngành Kiến trúc xây dựng.",
-                    "D. Học lớp ngoại ngữ ngắn hạn."
-                ],
-                correct: 1,
-                explanation: "Chị Hoa không ngừng học hỏi từ Dinh dưỡng Nutrime đến Super AI, CMA của thầy Trần Khánh Tự và chuỗi khóa học phát triển tư duy, Đời Mới XAI của thầy Tuấn Tử Tế."
-            },
-            {
-                question: "Câu 4: Sau thời gian học tập và trò chuyện thân thiện với AI như những người bạn, chị Hoa đã tự tin làm được những điều gì?",
-                options: [
-                    "A. Tự tin Livestream chia sẻ trên Facebook, chạy đường dài Marathon và tập Yoga.",
-                    "B. Tạo ảnh, tạo video, làm phim tự động và sáng tác cả nhạc bài hát bằng AI.",
-                    "C. Làm kênh YouTube, đăng Facebook và tạo Website đưa kiến thức lên GitHub.",
-                    "D. Tất cả các thành tựu tuyệt vời trên."
-                ],
-                correct: 3,
-                explanation: "Chị Hoa đã lột xác ngoạn mục: vừa chạy Marathon, tập Yoga rèn Thân - Tâm - Trí, vừa Livestream, làm YouTube, tạo phim, sáng tác nhạc AI và làm Website đưa lên GitHub."
-            },
-            {
-                question: "Câu 5: Ý nghĩa 5 chữ 'ĐI' trong những chuyến hành trình trải nghiệm dọc chiều dài đất nước từ Nam ra Bắc của chị Hoa cùng thầy và đồng đội là gì?",
-                options: [
-                    "A. Đi chỉ để nghỉ dưỡng đơn thuần.",
-                    "B. Đi để học, đi để hiểu biết, đi để tự hào, đi để biết ơn, đi để phát triển.",
-                    "C. Đi để khảo sát thị trường.",
-                    "D. Đi để mua sắm."
-                ],
-                correct: 1,
-                explanation: "Mỗi chuyến đi qua Hoàng Sơn Quan, Ninh Bình, Kênh Gà... đều mang trọn 5 giá trị: Đi để học, đi để hiểu biết, đi để tự hào, đi để biết ơn và đi để phát triển."
-            }
-        ];
-
-        let userAnswers = new Array(quizData.length).fill(null);
-
-        function renderQuiz() {
-            const container = document.getElementById('quizContainer');
-            container.innerHTML = '';
-
-            quizData.forEach((item, qIndex) => {
-                const card = document.createElement('div');
-                card.className = 'p-5 sm:p-6 rounded-2xl bg-navy-950/90 border border-gold-500/25 space-y-4';
-
-                const title = document.createElement('h4');
-                title.className = 'font-bold text-white text-sm sm:text-base';
-                title.textContent = item.question;
-                card.appendChild(title);
-
-                const optionsGrid = document.createElement('div');
-                optionsGrid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3';
-
-                item.options.forEach((optText, oIndex) => {
-                    const btn = document.createElement('button');
-                    const isAnswered = userAnswers[qIndex] !== null;
-                    const isSelected = userAnswers[qIndex] === oIndex;
-                    const isCorrect = item.correct === oIndex;
-
-                    let btnClass = 'text-left p-3.5 rounded-xl border text-xs sm:text-sm transition font-medium ';
-                    if (!isAnswered) {
-                        btnClass += 'bg-navy-900 border-gold-500/20 text-slate-200 hover:border-gold-400 hover:bg-navy-800';
-                    } else {
-                        if (isCorrect) {
-                            btnClass += 'bg-emerald-500/20 border-emerald-400 text-emerald-300 font-bold';
-                        } else if (isSelected && !isCorrect) {
-                            btnClass += 'bg-crimson-500/20 border-crimson-500 text-crimson-300';
-                        } else {
-                            btnClass += 'bg-navy-900/50 border-slate-800 text-slate-500';
-                        }
-                    }
-
-                    btn.className = btnClass;
-                    btn.textContent = optText;
-                    btn.disabled = isAnswered;
-                    btn.onclick = () => selectAnswer(qIndex, oIndex);
-                    optionsGrid.appendChild(btn);
-                });
-
-                card.appendChild(optionsGrid);
-
-                if (userAnswers[qIndex] !== null) {
-                    const exp = document.createElement('div');
-                    const isUserCorrect = userAnswers[qIndex] === item.correct;
-                    exp.className = `p-3.5 rounded-xl text-xs sm:text-sm ${isUserCorrect ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/30' : 'bg-amber-500/10 text-amber-300 border border-amber-500/30'}`;
-                    exp.innerHTML = `<strong>${isUserCorrect ? '🎉 Chính xác!' : '💡 Giải thích:'}</strong> ${item.explanation}`;
-                    card.appendChild(exp);
-                }
-
-                container.appendChild(card);
-            });
-
-            const score = userAnswers.reduce((acc, ans, idx) => acc + (ans === quizData[idx].correct ? 1 : 0), 0);
-            document.getElementById('quizScore').textContent = `${score}/${quizData.length}`;
-        }
-
-        function selectAnswer(qIndex, oIndex) {
-            userAnswers[qIndex] = oIndex;
-            renderQuiz();
-        }
-
-        function resetQuiz() {
-            userAnswers = new Array(quizData.length).fill(null);
-            renderQuiz();
-        }
-
-        // 8. Sổ tay Suy ngẫm LocalStorage
-        function loadJournal() {
-            document.getElementById('journalInput1').value = localStorage.getItem('bsHoa_journal_1') || '';
-            document.getElementById('journalInput2').value = localStorage.getItem('bsHoa_journal_2') || '';
-        }
-
-        function saveJournal() {
-            localStorage.setItem('bsHoa_journal_1', document.getElementById('journalInput1').value);
-            localStorage.setItem('bsHoa_journal_2', document.getElementById('journalInput2').value);
-            document.getElementById('saveStatus').innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Đã lưu thành công suy ngẫm của bạn vào trình duyệt!';
-        }
-
-        function downloadJournal() {
-            const j1 = document.getElementById('journalInput1').value || '(Chưa ghi)';
-            const j2 = document.getElementById('journalInput2').value || '(Chưa ghi)';
-            const content = `BẢN SUY NGẪM & CAM KẾT HÀNH ĐỘNG\nBài giảng: Từ Hạt Ngô Nghèo Sơn Trung Đến Bác Sĩ Làm Chủ Kỷ Nguyên XAI - BS. Nguyễn Thị Hoa\n==================================================\n\n1. Điều chạm đến trái tim tôi nhất:\n${j1}\n\n2. Kế hoạch hành động về AI & Thân - Tâm - Trí:\n${j2}\n\n--------------------------------------------------\nWebsite GitHub: https://github.com/nguenhoa137-droid/blogcanhan.github.io`;
-            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Cam-Ket-Hanh-Dong-Cung-BS-Hoa.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+        // Local Storage Note Saver
+        function saveNote() {
+            const noteText = document.getElementById('userNote').value;
+            localStorage.setItem('bsHoa_lectureNote', noteText);
+            const status = document.getElementById('saveStatus');
+            status.classList.remove('hidden');
+            setTimeout(() => status.classList.add('hidden'), 3000);
         }
 
         window.onload = function() {
-            renderQuiz();
-            loadJournal();
-        };
+            const saved = localStorage.getItem('bsHoa_lectureNote');
+            if(saved) {
+                document.getElementById('userNote').value = saved;
+            }
+        }
     </script>
 </body>
 </html>
